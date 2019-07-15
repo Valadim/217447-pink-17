@@ -14,30 +14,78 @@
       <img src="img/pink-logo-mobile.svg" alt="логотип" width="75" height="22" class="page-header__logo-image">
     </a>
     <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">HTML Academy</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a href="#" class="user-list__login">Вход</a>
-        </li>
-      </ul>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-</header>
+  </header>
 
-  <main class="container">
+  <main class="page-main">
+    <section class="page-title">
+      <header class="page-title__header">
+        <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
+        <div class="page-title__image-wrapper">
+          <img src="phone.png" alt="Мобильное приложение Pink" width="111" height="197" class="page-title__image">
+        </div>
+        <a href="https://www.apple.com/itunes/" class="page-title_button-download">Скачать приложение</a>
+        <ul class="page-title__marketplace-list">
+          <li class="page-title__marketplace-list-item">
+            <a href="https://www.apple.com/ru/ios/app-store/">Скачать в App Store</a>
+          </li>
+          <li class="page-title__marketplace-list-item">
+            <a href="https://play.google.com/store/apps?hl=ru">Скачать в Google Play</a>
+          </li>
+          <li class="page-title__marketplace-list-item">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows">Скачать в Microsoft Store</a>
+          </li>
+        </ul>
+        <small class="page-title__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+      </header>
+    </section>
+
+    <section class="about-app">
+      <h2 class="visually-hidden">Информация о приложении</h2>
+      <div class="about-app__slogan-wraper">
+        <p class="about-app__slogan">Устали от серости мегаполиса?</p>
+        <p class="about-app__slogan">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="about-app__feature-wraper">
+        <ul class="about-app__future-list">
+          <li class="about-app__future-item">
+            <h3 class="about-app__future-heading">Поднимает настроение</h3>
+            <p class="about-app__feature-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="about-app__future-item">
+            <h3 class="about-app__future-heading">Меняет мир вокруг</h3>
+            <p class="about-app__feature-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="about-app__future-item">
+            <h3 class="about-app__future-heading">Заводит новых друзей</h3>
+            <p class="about-app__feature-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about-app__image-wraper"></div>
+
+
+    </section>
+
+
+
 
   </main>
 
