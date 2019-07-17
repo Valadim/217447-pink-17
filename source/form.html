@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Конкурс на самое безбашенное путешествие с Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="img/pink-logo-mobile.svg" alt="логотип" width="75" height="22" class="page-header__logo-image">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item_active">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="inner-page-title">
+      <header class="inner-page-title__header">
+        <h1 class="inner-page-title__header-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </header>
+    </section>
+
+    <section class="contest-form">
+      <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+      <form class="contest-form__main-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="contest-form__name">
+          <legend class="contest-form__intro-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+            миль на
+            вашу бонусную карту! Пожалуйста, заполните форму ниже:</legend>
+          <p class="contest-form__name-item">
+            <label class="contest-form__text-input-label" for="contest-form__surname">Фамилия:</label>
+            <input class="contest-form__text-input" id="contest-form__surname" type="text" required name="surname" value=""
+              placeholder="Укажите фамилию *">
+          </p>
+          <p class="contest-form__name-item">
+            <label class="contest-form__text-input-label" for="contest-form__name">Имя:</label>
+            <input class="contest-form__text-input" id="contest-form__name" type="text" required name="name" value="" placeholder="Введите ваше имя *">
+          </p>
+          <p class="contest-form__name-item">
+            <label class="contest-form__text-input-label" for="contest-form__last-name">Отчество:</label>
+            <input class="contest-form__text-input" id="contest-form__last-name" type="text" name="last-name" value="" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+
+        <fieldset class="contest-form__crazy-achievements">
+          <legend class="contest-form__intro-text">Ваши безбашенные достижения в путешествии</legend>
+          <p class="contest-form__checkbox-item">
+            <label class="contest-form__checkbox-label" for="contest-form__cswim-with-shark">Сделал селфи с
+              акулой</label>
+            <input class="contest-form__checkbox-input" id="contest-form__cswim-with-shark" type="checkbox" checked
+              name="swim-with-shark" value="Сделал селфи с акулой">
+          </p>
+          <p class="contest-form__checkbox-item">
+            <label class="contest-form__checkbox-label" for="contest-form__burned-on-the-beach">Обгорел на пляже</label>
+            <input class="contest-form__checkbox-input" id="contest-form__burned-on-the-beach" type="checkbox" checked
+              name="Burned-on-the-beach" value="Обгорел на пляже">
+          </p>
+          <p class="contest-form__checkbox-item">
+            <label class="contest-form__checkbox-label" for="contest-form__saw-Chuck-Norris">Видел Чака Норриса</label>
+            <input class="contest-form__checkbox-input" id="contest-form__saw-Chuck-Norris" type="checkbox"
+              name="Saw-Chuck-Norris" value="Видел Чака Норриса">
+          </p>
+          <p class="contest-form__checkbox-item">
+            <label class="contest-form__checkbox-label" for="contest-form__bought-souvenirs">Накупил сувениров</label>
+            <input class="contest-form__checkbox-input" id="contest-form__bought-souvenirs" type="checkbox"
+              name="Bought-souvenirs" value="Накупил сувениров">
+          </p>
+          <p class="contest-form__checkbox-item">
+            <label class="contest-form__checkbox-label" for="contest-form__kept-the-tower">Удержал башню</label>
+            <input class="contest-form__checkbox-input" id="contest-form__kept-the-tower" type="checkbox" checked
+              name="Kept-the-tower" value="Удержал башню">
+          </p>
+          <p class="contest-form__checkbox-item">
+            <label class="contest-form__checkbox-label" for="contest-form__defeated-the-hotel">Разгромил отель</label>
+            <input class="contest-form__checkbox-input" id="contest-form__defeated-the-hotel" type="checkbox"
+              name="Defeated-the-hotel" value="Разгромил отель">
+          </p>
+        </fieldset>
+
+        <fieldset class="contest-form__contacts">
+          <p class="contest-form__contacts-item">
+            <label class="contest-form__phone-input-label" for="contest-form__phone-number">Номер телефона:</label>
+            <input class="contest-form__phone-input" id="contest-form__phone-number" type="tel" name="phone-number" value=""
+              placeholder="Номер, пожалуйста">
+          </p>
+          <p class="contest-form__contacts-item">
+            <label class="contest-form__email-input-label" for="contest-form__email">Адрес почты</label>
+            <input class="contest-form__email-input" id="contest-form__email" type="email" required name="email" value="" placeholder="Введите почту *">
+          </p>
+        </fieldset>
+
+        <fieldset class="contest-form__app-version">
+          <legend class="contest-form__intro-text">С каким приложением путешествовали?</legend>
+          <p class="contest-form__radio-item">
+            <label class="contest-form__radio-label" for="contest-form__ios-version">Pink для iOS</label>
+            <input class="contest-form__radio-input" id="contest-form__ios-version" type="radio" checked
+              name="app-version" value="iOS">
+          </p>
+          <p class="contest-form__radio-item">
+            <label class="contest-form__radio-label" for="contest-form__android-version">Pink на Android</label>
+            <input class="contest-form__radio-input" id="contest-form__android-version" type="radio" name="app-version"
+              value="Android">
+          </p>
+          <p class="contest-form__radio-item">
+            <label class="contest-form__radio-label" for="contest-form__windows-phone-version">Windows Phone</label>
+            <input class="contest-form__radio-input" id="contest-form__windows-phone-version" type="radio"
+              name="app-version" value="Windows-Phone">
+          </p>
+        </fieldset>
+
+        <fieldset class="contest-form__comment">
+          <p class="contest-form__comment-item">
+            <label class="contest-form__comment-label" for="contest-form__comment">Опишите свои эмоции</label>
+            <textarea class="contest-form__comment-input" id="contest-form__comment" name="comment" rows="3"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </p>
+        </fieldset>
+        <button class="contest-form__submit-button button" type="submit">Отправить форму</button>
+        <p class="contest-form__required-fields-text"><span class="contest-form__attention-sign">*</span> — обязательные поля</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer-inner">
+    <div class="page-footer-inner__logo-wrapper">
+      <img src="img/footer-logo.png" alt="логотип Pink" width="147" height="40" class="page-footer-inner__logo-image">
+    </div>
+    <ul class="page-footer-inner__social-links-list">
+      <li class="page-footer-inner__social-links-item">
+        <a class="visually-hidden" href="https://twitter.com/?lang=ru">Твиттер</a>
+      </li>
+      <li class="page-footer-inner__social-links-item">
+        <a class="visually-hidden" href="https://web.facebook.com">Фейсбук</a>
+      </li>
+      <li class="page-footer-inner__social-links-item">
+        <a class="visually-hidden" href="https://www.youtube.com/">Ютуб</a>
+      </li>
+    </ul>
+    <p class="page-footer-inner__copywright">
+      <a href="https://up.htmlacademy.ru/adaptive/17" class="page-footer-inner__copywright-link">Разработано
+        <img src="img/html-academy-logo.svg" alt="Логотип HTML Академии" width="27" height="34"
+          class="page-footer-inner__copywright-image">
+      </a>
+    </p>
+  </footer>
+
+</body>
+
+</html>

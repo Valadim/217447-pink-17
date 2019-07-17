@@ -1,12 +1,233 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/pink-logo-mobile.svg" alt="логотип" width="75" height="22" class="page-header__logo-image">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-title">
+      <header class="page-title__header">
+        <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
+        <div class="page-title__image-wrapper">
+          <img src="phone.png" alt="Мобильное приложение Pink" width="111" height="197" class="page-title__image">
+        </div>
+        <a href="https://www.apple.com/itunes/" class="page-title_button-download">Скачать приложение</a>
+        <ul class="page-title__marketplace-list">
+          <li class="page-title__marketplace-list-item">
+            <a href="https://www.apple.com/ru/ios/app-store/">Скачать в App Store</a>
+          </li>
+          <li class="page-title__marketplace-list-item">
+            <a href="https://play.google.com/store/apps?hl=ru">Скачать в Google Play</a>
+          </li>
+          <li class="page-title__marketplace-list-item">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows">Скачать в Microsoft Store</a>
+          </li>
+        </ul>
+        <p class="page-title__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </header>
+    </section>
+
+    <section class="about-app">
+      <h2 class="visually-hidden">Информация о приложении</h2>
+      <div class="about-app__slogan-wrapper">
+        <p class="about-app__slogan">Устали от серости мегаполиса?</p>
+        <p class="about-app__slogan">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="about-app__advantages-wrapper">
+        <ul class="about-app__advantages-list">
+          <li class="about-app__advantages-item">
+            <h3 class="about-app__advantages-heading">Поднимает настроение</h3>
+            <p class="about-app__advantages-description">Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!</p>
+          </li>
+          <li class="about-app__advantages-item">
+            <h3 class="about-app__advantages-heading">Меняет мир вокруг</h3>
+            <p class="about-app__advantages-description">Сделайте снимок и украсьте его смайликом или текстовой
+              подписью,
+              чтобы усилить эффект</p>
+          </li>
+          <li class="about-app__advantages-item">
+            <h3 class="about-app__advantages-heading">Заводит новых друзей</h3>
+            <p class="about-app__advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+              и
+              заводите новых</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about-app__image-wrapper">
+        <img src="img/about-img.png" alt="Интерфейс приложения" class="about-app__image">
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы о приложении</h2>
+      <div class="reviews__wrapper slider">
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autror-name">Николай Петров</cite>
+            <p class="reviews__reviews-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autror-name">Николай Петров</cite>
+            <p class="reviews__reviews-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autror-name">Николай Петров</cite>
+            <p class="reviews__reviews-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+
+    <section class="pricing-plans">
+      <h2 class="visually-hidden">Тарифные планы</h2>
+      <div class="pricing-plans__wrapper slider">
+        <div class="pricing-plans__slider slider__list">
+          <table class="pricing-plans__pricing-list slider__item">
+            <tr>
+            <th  colspan="2">
+              <div class="pricing-plans__price-tag">ХИТ</div>
+              <b class="pricing-plans__pricing-title">Стандарт</b>
+              <p class="pricing-plans__price-value">3,99 USD</p>
+            </th>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Розовый фильтр</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--yes">есть</td>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Смайлики</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--yes">есть</td>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Комментарии</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--no">нет</td>
+            </tr>
+          </table>
+
+          <table class="pricing-plans__pricing-list slider__item">
+            <tr>
+            <th  colspan="2">
+              <div class="pricing-plans__price-marker">ХИТ</div>
+              <b class="pricing-plans__pricing-title">Стандарт</b>
+              <p class="pricing-plans__price-value">3,99 USD</p>
+            </th>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Розовый фильтр</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--yes">есть</td>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Смайлики</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--yes">есть</td>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Комментарии</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--no">нет</td>
+            </tr>
+          </table>
+
+          <table class="pricing-plans__pricing-list slider__item">
+            <tr>
+            <th colspan="2">
+              <div class="pricing-plans__price-marker">ХИТ</div>
+              <b class="pricing-plans__pricing-title">Стандарт</b>
+              <p class="pricing-plans__price-value">3,99 USD</p>
+            </th>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Розовый фильтр</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--yes">есть</td>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Смайлики</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--yes">есть</td>
+            </tr>
+            <tr>
+              <td class="pricing-plans__feature-name">Комментарии</td>
+              <td class="pricing-plans__feature-marker pricing-plans__feature-marker--no">нет</td>
+            </tr>
+          </table>
+        </div>
+        <p class="pricing-plans__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__heading">Остались вопросы? Свяжитесь с нами!</h2>
+      <ul class="page-footer__contacts-list">
+        <li class="page-footer__contacts-item">
+          <b class="page-footer__contactss-title">Звоните:</b>
+          <p class="page-footer__contacts-text">
+            <a href="tel:+78125556666" class="page-footer__contacts-link">+7 (812) 555-66-66</a>
+          </p>
+        </li>
+        <li class="page-footer__contacts-item">
+          <b class="page-footer__contactss-title">Пишите:</b>
+          <p class="page-footer__contacts-text">
+            <a href="mailto:mail@htmlacademy.ru" class="page-footer__contacts-link">mail@htmlacademy.ru</a>
+          </p>
+        </li>
+        <li class="page-footer__contacts-item">
+          <b class="page-footer__contactss-title">Приезжайте в гости:</b>
+          <p class="page-footer__contacts-text">
+            <a href="#" class="page-footer__contacts-link">ул. Большая<br>Конюшенная, 19/8</a>
+          </p>
+        </li>
+      </ul>
+      <div class="page-footer__map_wrapper">
+        <img src="img/map.png" alt="ул. Большая Конюшенная, 19/8" width="320" height="220" class="page-footer__map_image">
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
