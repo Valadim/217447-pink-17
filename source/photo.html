@@ -3,31 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Фотографии пользователей</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="img/pink-logo-mobile.svg" alt="логотип" width="75" height="22" class="page-header__logo-image">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo-pink-white-mobile.svg" alt="логотип" width="75" height="22" class="page-header__logo-image">
     </a>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden1">Открыть меню</span></button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__item--active">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
           </li>
         </ul>
       </div>

@@ -1,0 +1,30 @@
+.page-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: $text-dark;
+  background-color: $main-color;
+
+}
+
+.main-nav__list {
+  @include list-normilize;
+}
+
+.main-nav__toggle {
+  position: relative;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  font-size: 18px;
+  line-height: 32px;
+  color: $text-light;
+  text-decoration: none;
+}
+
+.main-nav__item--active {
+  color: $accent-color;
+}

@@ -1,0 +1,59 @@
+.page-title {
+  background-color: $main-color;
+  background-image: url(/img/bg-back-mobile@1x.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-title__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title__slogan{
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding: 0 45px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  color: $text-light;
+  text-align: center;
+}
+.page-title__image-wrapper {
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.page-title_button-download{
+ @include button;
+ border: 3px solid $text-light;
+ color: $text-light;
+ margin-bottom: 30px;
+}
+
+.page-title__marketplace-list {
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include list-normilize;
+  margin-bottom: 30px;
+}
+
+.page-title__marketplace-list-item {
+  // margin: 0 auto;
+}
+
+.page-title__legend {
+  font: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $text-light;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 0px 70px;
+}
+
