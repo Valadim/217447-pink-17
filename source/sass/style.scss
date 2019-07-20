@@ -1,10 +1,16 @@
 @import "variables.scss";
 @import "mixins.scss";
+@import "normalize.scss";
 @import "fonts.scss";
-@import "body.scss";
+@import "global.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-title.scss";
 @import "blocks/about-app.scss";
 @import "blocks/reviews.scss";
 @import "blocks/pricing-plans.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/contest-form.scss";
+@import "blocks/inner-page-title.scss";
+@import "blocks/page-footer-inner.scss";
+@import "blocks/upload-photo.scss";
+@import "blocks/user-photos.scss";
