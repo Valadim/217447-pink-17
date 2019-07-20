@@ -1,0 +1,7 @@
+.about-app {
+  background-color: $bg-alt;
+}
+
+.about-app ul {
+  @include list-normilize;
+}

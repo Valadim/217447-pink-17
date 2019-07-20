@@ -1,1 +1,10 @@
-body { background: red; }
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-title.scss";
+@import "blocks/about-app.scss";
+@import "blocks/reviews.scss";
+@import "blocks/pricing-plans.scss";
+@import "blocks/page-footer.scss";
