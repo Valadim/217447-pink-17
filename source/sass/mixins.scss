@@ -4,6 +4,12 @@
   list-style: none;
 }
 
+@mixin main-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-dark;
+}
+
 @mixin button {
   display: inline-block;
   text-decoration: none;

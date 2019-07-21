@@ -5,13 +5,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.page-title__header{
+
+.page-title__header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page-title__slogan{
+.page-title__slogan {
   margin-top: 25px;
   margin-bottom: 30px;
   padding: 0 45px;
@@ -21,16 +22,17 @@
   color: $text-light;
   text-align: center;
 }
+
 .page-title__image-wrapper {
   align-self: flex-start;
   margin-bottom: 30px;
 }
 
-.page-title_button-download{
- @include button;
- border: 3px solid $text-light;
- color: $text-light;
- margin-bottom: 30px;
+.page-title_button-download {
+  @include button;
+  border: 3px solid $text-light;
+  color: $text-light;
+  margin-bottom: 30px;
 }
 
 .page-title__marketplace-list {
@@ -42,10 +44,6 @@
   margin-bottom: 30px;
 }
 
-.page-title__marketplace-list-item {
-  // margin: 0 auto;
-}
-
 .page-title__legend {
   font: 14px;
   line-height: 24px;
@@ -54,6 +52,5 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 40px;
-  padding: 0px 70px;
+  padding: 0px 20px;
 }
-
