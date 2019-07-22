@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,23 +12,23 @@
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/pink-logo-mobile.svg" alt="логотип" width="75" height="22" class="page-header__logo-image">
+      <img src="img/logo-pink-white-mobile.svg" alt="логотип" width="75" height="22" class="page-header__logo-image">
     </a>
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__item--active">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -38,19 +39,30 @@
     <section class="page-title">
       <header class="page-title__header">
         <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
+        <p class="page-title__slogan">Взгляните на жизнь иначе!</p>
         <div class="page-title__image-wrapper">
-          <img src="phone.png" alt="Мобильное приложение Pink" width="111" height="197" class="page-title__image">
+          <img src="img/iphone-hand-mobile@1x.png" alt="Мобильное приложение Pink" width="258" height="286"
+            class="page-title__image">
         </div>
-        <a href="https://www.apple.com/itunes/" class="page-title_button-download">Скачать приложение</a>
+        <a class="page-title_button-download" href="https://www.apple.com/itunes/">Скачать приложение</a>
         <ul class="page-title__marketplace-list">
           <li class="page-title__marketplace-list-item">
-            <a href="https://www.apple.com/ru/ios/app-store/">Скачать в App Store</a>
+            <a class="page-title__marketplace-link" href="https://www.apple.com/ru/ios/app-store/">
+              <span class="visually-hidden">Скачать в App Store</span>
+              <img src="img/logo-apple.svg" alt="Скачать в App Store" class="page-title__marketplace-image">
+            </a>
           </li>
           <li class="page-title__marketplace-list-item">
-            <a href="https://play.google.com/store/apps?hl=ru">Скачать в Google Play</a>
+            <a class="page-title__marketplace-link" href="https://play.google.com/store/apps?hl=ru">
+              <span class="visually-hidden">Скачать в Google Play</span>
+              <img src="img/logo-android.svg" alt="Скачать в Google Play" class="page-title__marketplace-image">
+            </a>
           </li>
           <li class="page-title__marketplace-list-item">
-            <a href="https://www.microsoft.com/ru-ru/store/apps/windows">Скачать в Microsoft Store</a>
+            <a class="page-title__marketplace-link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+              <span class="visually-hidden">Скачать в Microsoft Store</span>
+              <img src="img/logo-microsoft.svg" alt="Скачать в Microsoft Store" class="page-title__marketplace-image">
+            </a>
           </li>
         </ul>
         <p class="page-title__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -66,18 +78,18 @@
       <div class="about-app__advantages-wrapper">
         <ul class="about-app__advantages-list">
           <li class="about-app__advantages-item">
-            <h3 class="about-app__advantages-heading">Поднимает настроение</h3>
+            <h3 class="about-app__advantages-title">Поднимает настроение</h3>
             <p class="about-app__advantages-description">Приложение позволит вам победить осеннюю хандру и депрессию
               буквально в несколько кликов!</p>
           </li>
           <li class="about-app__advantages-item">
-            <h3 class="about-app__advantages-heading">Меняет мир вокруг</h3>
+            <h3 class="about-app__advantages-title">Меняет мир вокруг</h3>
             <p class="about-app__advantages-description">Сделайте снимок и украсьте его смайликом или текстовой
               подписью,
               чтобы усилить эффект</p>
           </li>
           <li class="about-app__advantages-item">
-            <h3 class="about-app__advantages-heading">Заводит новых друзей</h3>
+            <h3 class="about-app__advantages-title">Заводит новых друзей</h3>
             <p class="about-app__advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
               и
               заводите новых</p>
@@ -85,7 +97,8 @@
         </ul>
       </div>
       <div class="about-app__image-wrapper">
-        <img src="img/about-img.png" alt="Интерфейс приложения" class="about-app__image">
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Интерфейс приложения"
+          class="about-app__image">
       </div>
     </section>
 
@@ -126,11 +139,11 @@
         <div class="pricing-plans__slider slider__list">
           <table class="pricing-plans__pricing-list slider__item">
             <tr>
-            <th  colspan="2">
-              <div class="pricing-plans__price-tag">ХИТ</div>
-              <b class="pricing-plans__pricing-title">Стандарт</b>
-              <p class="pricing-plans__price-value">3,99 USD</p>
-            </th>
+              <th colspan="2">
+                <div class="pricing-plans__price-tag">ХИТ</div>
+                <b class="pricing-plans__pricing-title">Стандарт</b>
+                <p class="pricing-plans__price-value">3,99 USD</p>
+              </th>
             </tr>
             <tr>
               <td class="pricing-plans__feature-name">Розовый фильтр</td>
@@ -148,11 +161,11 @@
 
           <table class="pricing-plans__pricing-list slider__item">
             <tr>
-            <th  colspan="2">
-              <div class="pricing-plans__price-marker">ХИТ</div>
-              <b class="pricing-plans__pricing-title">Стандарт</b>
-              <p class="pricing-plans__price-value">3,99 USD</p>
-            </th>
+              <th colspan="2">
+                <div class="pricing-plans__price-marker">ХИТ</div>
+                <b class="pricing-plans__pricing-title">Стандарт</b>
+                <p class="pricing-plans__price-value">3,99 USD</p>
+              </th>
             </tr>
             <tr>
               <td class="pricing-plans__feature-name">Розовый фильтр</td>
@@ -170,11 +183,11 @@
 
           <table class="pricing-plans__pricing-list slider__item">
             <tr>
-            <th colspan="2">
-              <div class="pricing-plans__price-marker">ХИТ</div>
-              <b class="pricing-plans__pricing-title">Стандарт</b>
-              <p class="pricing-plans__price-value">3,99 USD</p>
-            </th>
+              <th colspan="2">
+                <div class="pricing-plans__price-marker">ХИТ</div>
+                <b class="pricing-plans__pricing-title">Стандарт</b>
+                <p class="pricing-plans__price-value">3,99 USD</p>
+              </th>
             </tr>
             <tr>
               <td class="pricing-plans__feature-name">Розовый фильтр</td>
@@ -223,7 +236,8 @@
         </li>
       </ul>
       <div class="page-footer__map_wrapper">
-        <img src="img/map.png" alt="ул. Большая Конюшенная, 19/8" width="320" height="220" class="page-footer__map_image">
+        <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8" width="320" height="645"
+          class="page-footer__map_image">
       </div>
     </div>
   </footer>

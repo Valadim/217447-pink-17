@@ -1,0 +1,38 @@
+.about-app {
+  background-color: $bg-alt;
+}
+
+.about-app__slogan-wrapper {
+  background-color: $bg-color;
+}
+
+.about-app__slogan {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: $text-dark;
+}
+
+.about-app ul {
+  @include list-normilize;
+}
+
+.about-app__advantages-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $text-black;
+  text-align: center;
+}
+
+.about-app__advantages-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-dark;
+  text-align: center;
+}
+
+.about-app__image-wrapper {
+  text-align: center;
+}

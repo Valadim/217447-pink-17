@@ -1,0 +1,46 @@
+.page-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: $text-dark;
+  background-color: $main-color;
+}
+
+.main-nav__list {
+  @include list-normilize;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 34px;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("/img/icon-menu-burger.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main-nav__link {
+  font-size: 18px;
+  line-height: 32px;
+  color: $text-light;
+  text-decoration: none;
+}
+
+.main-nav__item--active {
+  color: $accent-color;
+}
