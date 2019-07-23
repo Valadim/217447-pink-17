@@ -62,36 +62,7 @@
   color: $accent-color;
 }
 
-@media (min-width: $tablet-width) {}
-
-
-@media (min-width: $desktop-width) {}
-
 .main-nav__toggle {
   width: 150px;
   margin: 0 auto;
 }
-
-// .main-nav__toggle {
-//   position: absolute;
-//   top: 0;
-//   right: 34px;
-//   width: 30px;
-//   height: 30px;
-//   font-size: 0;
-//   background-color: transparent;
-//   border: 0;
-//   cursor: pointer;
-// }
-
-// .main-nav__toggle::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 30px;
-//   height: 30px;
-//   background-image: url("/img/icon-menu-burger.svg");
-//   background-position: center center;
-//   background-repeat: no-repeat;
-// }
