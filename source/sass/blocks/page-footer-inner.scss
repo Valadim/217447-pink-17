@@ -63,3 +63,29 @@
   width: 35px;
   height: 44px;
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .page-footer-inner {
+    padding: 20px 0;
+  }
+  .page-footer-inner__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .page-footer-inner__logo-wrapper {
+    margin: 0;
+  }
+
+  .page-footer-inner__copywright {
+    margin: 0;
+  }
+  .page-footer-inner__social-links-list{
+    margin: 0;
+  }
+}
