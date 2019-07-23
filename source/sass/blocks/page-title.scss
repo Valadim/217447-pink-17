@@ -7,13 +7,6 @@
   background-size: 260px, cover;
 }
 
-// .page-title__header {
-//   min-height: 400px;
-//   background-image: url("../img/iphone-hand-mobile@1x.png");
-//   background-position: center center;
-//   background-repeat: no-repeat;
-// }
-
 .page-title__header {
   display: flex;
   flex-direction: column;
@@ -127,7 +120,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .page-title {
     background-image: url("../img/bg-back-desktop@1x.jpg");
@@ -169,7 +161,6 @@
 
   .page-title__image-wrapper {
     width: 300px;
-
   }
 
   .page-title__image {

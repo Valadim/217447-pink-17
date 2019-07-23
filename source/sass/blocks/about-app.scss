@@ -81,8 +81,7 @@
 
   .about-app__images-block {
     flex-direction: row;
-    // flex-basis: 50%
-  }
+ }
 
   .about-app__image-wrapper {
     display: none;
@@ -94,7 +93,6 @@
     margin-right: 50px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .about-app__advantages-container {
@@ -134,7 +132,6 @@
     text-align: center;
     justify-content: center;
     width: 270px;
-
   }
 
   .about-app__main-image {
@@ -143,5 +140,3 @@
     margin-right: 0;
   }
 }
-
-// and (max-width: $desktop-width)
