@@ -39,13 +39,10 @@
   </header>
 
   <main class="page-main">
-    <section class="inner-page-title">
-      <header class="inner-page-title__header">
-        <h1 class="inner-page-title__header-title">Фотографии пользователей</h1>
-      </header>
-    </section>
 
-    <!-- Рефакторим код  блока с фотографиями-->
+    <section class="inner-page-title">
+      <h1 class="inner-page-title__header-title">Фотографии пользователей</h1>
+    </section>
 
     <div class="user-photos">
       <p class="user-photos__intro-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
@@ -67,236 +64,110 @@
         </div>
       </section>
 
-      <section class="user-photos__posts">
+      <section class="user-photos__posts-wrapper container">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
-
-      </section>
-    </div>
-
-
-
-    <section class="user-photos">
-      <h2 class="visually-hidden">Фотографии пользователей</h2>
-
-
-      <div class="user-photos__promo-wrapper">
-        <!-- <div class="user-photos__promo-post">
-          <div class="user-photos__day-panorama-wrapper">
-            <span class="user-photos__promo-tag">ПАНОРАМА ДНЯ</span>
-            <img class="user-photos__day-panorama-image" src="img/panorama-desktop@1x.jpg" alt="Панорама дня">
-          </div>
-        </div> -->
-        <div class="user-photos__post-info--prommo">
-          <p class="user-photos__author-block--prommo">
-            <b class="user-photos__author-name">Анна</b>
-            <span class="user-photos__posted-time">(5 минут назад)</span>
-          </p>
-          <p class="user-photos__photo-description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-            трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="user-photos__like-block--prommo">
-            <svg class="user-photos__like-icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-              viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-              xml:space="preserve">
-              <g>
-                <path
-                  d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-              </g>
-            </svg>
-            <span class="user-photos__like-text">Нравится: 215</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="user-photos__posts-wrapper container">
-
         <div class="user-photos__user-post">
-          <div class="user-photos__image-wrapper">
-            <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180"
-              class="user-photos__image">
-          </div>
+          <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" class="user-photos__image">
           <div class="user-photos__post-info">
             <p class="user-photos__author-block">
               <b class="user-photos__author-name">Левон</b>
               <span class="user-photos__posted-time">(5 часов назад)</span>
             </p>
             <p class="user-photos__photo-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="user-photos__like-block">
-              <svg class="user-photos__like-icon" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                xml:space="preserve">
-                <g>
-                  <path
-                    d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                </g>
-              </svg>
-              <span class="user-photos__like-text">Нравится: 356</span>
-            </p>
+            <p class="user-photos__like-block">Нравится: 356</span></p>
           </div>
         </div>
 
         <div class="user-photos__user-post">
-          <div class="user-photos__image-wrapper">
-            <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180"
-              class="user-photos__image">
-          </div>
+          <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" class="user-photos__image">
           <div class="user-photos__post-info">
             <p class="user-photos__author-block">
               <b class="user-photos__author-name">Антон</b>
               <span class="user-photos__posted-time">(12 часов назад)</span>
             </p>
             <p class="user-photos__photo-description">Соседи будут рады!</p>
-            <p class="user-photos__like-block">
-              <svg class="user-photos__like-icon" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                xml:space="preserve">
-                <g>
-                  <path
-                    d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                </g>
-              </svg>
-              <span class="user-photos__like-text">Нравится: 666</span>
-            </p>
+            <p class="user-photos__like-block">Нравится: 666</p>
           </div>
         </div>
 
         <div class="user-photos__user-post">
-          <div class="user-photos__image-wrapper">
-            <img src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180"
-              class="user-photos__image">
-          </div>
+          <img src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя" class="user-photos__image">
           <div class="user-photos__post-info">
             <p class="user-photos__author-block">
               <b class="user-photos__author-name">Борис</b>
               <span class="user-photos__posted-time">(20 часов назад)</span>
             </p>
             <p class="user-photos__photo-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="user-photos__like-block">
-              <svg class="user-photos__like-icon" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                xml:space="preserve">
-                <g>
-                  <path
-                    d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                </g>
-              </svg>
-              <span class="user-photos__like-text">Нравится: 215</span>
-            </p>
+            <p class="user-photos__like-block">Нравится: 215</p>
           </div>
         </div>
 
         <div class="user-photos__user-post">
-          <div class="user-photos__image-wrapper">
-            <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180"
-              class="user-photos__image">
-          </div>
+          <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" class="user-photos__image">
           <div class="user-photos__post-info">
             <p class="user-photos__author-block">
               <b class="user-photos__author-name">Сергей</b>
               <span class="user-photos__posted-time">(25 часов назад)</span>
             </p>
             <p class="user-photos__photo-description">Самая кубанская в мире!</p>
-            <p class="user-photos__like-block">
-              <svg class="user-photos__like-icon" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                xml:space="preserve">
-                <g>
-                  <path
-                    d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                </g>
-              </svg>
-              <span class="user-photos__like-text">Нравится: 4</span>
-            </p>
+            <p class="user-photos__like-block">Нравится: 4</p>
           </div>
         </div>
 
         <div class="user-photos__user-post">
-          <div class="user-photos__image-wrapper">
-            <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180"
-              class="user-photos__image">
-          </div>
+          <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" class="user-photos__image">
           <div class="user-photos__post-info">
             <p class="user-photos__author-block">
               <b class="user-photos__author-name">Максим</b>
               <span class="user-photos__posted-time">(40 часов назад)</span>
             </p>
             <p class="user-photos__photo-description">Где снег-то?</p>
-            <p class="user-photos__like-block">
-              <svg class="user-photos__like-icon" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                xml:space="preserve">
-                <g>
-                  <path
-                    d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                </g>
-              </svg>
-              <span class="user-photos__like-text">Нравится: 150</span>
-            </p>
+            <p class="user-photos__like-block">Нравится: 150</p>
           </div>
         </div>
 
         <div class="user-photos__user-post">
-          <div class="user-photos__image-wrapper">
-            <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" width="280" height="180"
-              class="user-photos__image">
-          </div>
+          <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" class="user-photos__image">
           <div class="user-photos__post-info">
             <p class="user-photos__author-block">
               <b class="user-photos__author-name">Надежда</b>
               <span class="user-photos__posted-time">(45 часов назад)</span>
             </p>
             <p class="user-photos__photo-description">Всем GM и взаимные лайки!</p>
-            <p class="user-photos__like-block">
-              <svg class="user-photos__like-icon" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
-                viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99"
-                xml:space="preserve">
-                <g>
-                  <path
-                    d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z" />
-                </g>
-              </svg>
-              <span class="user-photos__like-text">Нравится: 2560</span>
-            </p>
+            <p class="user-photos__like-block">Нравится: 2560</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="upload-photo">
-      <h2 class="visually-hidden">Загрузите свое изображение</h2>
-      <div class="upload-photo__intro-wrapper">
-        <p class="upload-photo__intro-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-      </div>
-      <div class="upload-photo__photo-editor">
-        <div class="upload-photo__photo-wrapper">
-          <img src="img/upload/jpg" alt="Загруженное изображение" width="280" height="374"
-            class="upload-photo__upload-image">
+      <section class="upload-photo container">
+        <h2 class="visually-hidden">Загрузите свое изображение</h2>
+        <div class="upload-photo__intro-wrapper">
+          <p class="upload-photo__intro-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <ul class="upload-photo__control-list">
-          <li class="upload-photo__control-item">
-            <button type="button" class="upload-photo__control-button_crop ">Обрезка изображение</button>
-          </li>
-          <li class="upload-photo__control-item">
-            <button type="button" class="upload-photo__control-button_fill">Заливка изображение</button>
-          </li>
-          <li class="upload-photo__control-item">
-            <button type="button" class="upload-photo__control-button_contrast">Контраст изображения</button>
-          </li>
-          <li class="upload-photo__control-item">
-            <label for="saturate" class="visually-hidden">Насыщенность</label>
-            <input id="saturate" type="range" min="0" max="100" step="1" value="80">
-          </li>
-        </ul>
-        <button type="button" class="upload-photo__posted-button button">Запостить</button>
-        <button type="button" class="upload-photo__cancel-button button-disabled">Отмена</button>
-      </div>
-    </section>
+        <div class="upload-photo__photo-editor">
+          <div class="upload-photo__photo-wrapper">
+            <img src="img/upload/jpg" alt="Загруженное изображение" width="280" height="374"
+              class="upload-photo__upload-image">
+          </div>
+          <ul class="upload-photo__control-list">
+            <li class="upload-photo__control-item">
+              <button type="button" class="upload-photo__control-button_crop ">Обрезка изображение</button>
+            </li>
+            <li class="upload-photo__control-item">
+              <button type="button" class="upload-photo__control-button_fill">Заливка изображение</button>
+            </li>
+            <li class="upload-photo__control-item">
+              <button type="button" class="upload-photo__control-button_contrast">Контраст изображения</button>
+            </li>
+            <li class="upload-photo__control-item">
+              <label for="saturate" class="visually-hidden">Насыщенность</label>
+              <input id="saturate" type="range" min="0" max="100" step="1" value="80">
+            </li>
+          </ul>
+          <button type="button" class="upload-photo__posted-button button">Запостить</button>
+          <button type="button" class="upload-photo__cancel-button button-disabled">Отмена</button>
+        </div>
+      </section>
   </main>
 
   <footer class="page-footer-inner">
