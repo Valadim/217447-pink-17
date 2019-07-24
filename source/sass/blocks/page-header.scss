@@ -11,12 +11,20 @@
   flex-direction: column;
 }
 
+.page-header__logo-image {
+  width: 80px;
+}
+
 .main-nav {
   width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    width: 80px;
+  }
+
   .main-nav {
     width: auto;
     margin: 0;

@@ -25,24 +25,19 @@
   text-align: center;
 }
 
-.wrap {
-  background-color: $main-color;
-  width: 100%;
-}
 
 .page-title__download-wrapper {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
   background-color: $main-color;
-  width: 100vw;
+  width: 100%;
   margin-top: 285px;
   padding: 25px 0 0;
   box-sizing: border-box;
 }
 
-.page-title__download-block {
-  width: 300px;
-  margin: 0 auto;
-}
 
 .page-title__image-wrapper {
   align-self: flex-start;
@@ -52,6 +47,7 @@
 .page-title_button-download {
   @include button;
 
+  display: block;
   border: 3px solid $text-light;
   color: $text-light;
   margin-bottom: 30px;
@@ -92,6 +88,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    width: 660px;
+    margin: 0 auto;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -132,6 +130,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    width: 960px;
+    margin: 0 auto;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: right bottom;
     background-repeat: no-repeat;
