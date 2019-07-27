@@ -22,7 +22,7 @@
     font-weight: 700;
     line-height: 1;
     color: $accent-color;
-    margin-left: 100px;
+    margin-left: 65px;
     margin-top: 75px;
   }
 
@@ -45,18 +45,26 @@
   }
   .effect__infp-wrapper {
     max-width: 310px;
-    margin-left: 20px;
+    margin-left: 65px;
   }
 
   .effect__title {
+    padding-top: 3px;
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 10px;
   }
 
   .effect__text {
     font-size: 14px;
     line-height: 24px;
     color: $main-color;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect_link-wrapper {
+    margin-top: 0;
   }
 
   .effect__link {
@@ -73,7 +81,7 @@
   .effect {
     display: flex;
     background-color: $bg-alt;
-    padding: 170px 0;
+    padding: 10px 0;
   }
 
   .effect__label {
@@ -84,14 +92,14 @@
     font-weight: 700;
     line-height: 220px;
     color: $accent-color;
-    margin-left: 100px;
+    margin-left: 80px;
   }
 
   .effect__label::before {
     content: "";
     position: absolute;
-    top: -105px;
-    left: -75px;
+    top: -110px;
+    left: -80px;
     width: 298px;
     height: 345px;
     background-image: url("/img/icon-editor-diagram-fill.svg"),
@@ -103,16 +111,25 @@
 
   .effect__infp-wrapper {
     max-width: 520px;
-    margin-left: 90px;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
   }
 
   .effect__title {
     line-height: 30px;
+    margin-bottom: 27px;
+  }
+
+  .effect__title br{
+    display: none;
   }
 
   .effect__text {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 27px;
   }
 
   .effect__link {

@@ -56,6 +56,10 @@
   color: $text-black;
 }
 
+.about-app__advantages-title br {
+  display: none;
+}
+
 .about-app__advantages-description {
   font-size: 14px;
   line-height: 24px;
@@ -89,7 +93,7 @@
 
   .about-app__advantages-container {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .about-app__advantages-wrapper {
@@ -112,7 +116,13 @@
   .about-app__advantages-list {
     flex-direction: column;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 68px;
+    padding-left: 20px;
+    width: 310px;
+  }
+
+  .about-app__advantages-item {
+    margin-bottom: 33px;
   }
 
   .about-app__advantages-title {
@@ -131,21 +141,21 @@
 
   .about-app__main-image {
     display: inline-flex;
+    margin-left: 55px;
   }
 
   .about-app__image {
     width: 268px;
     height: 481px;
+
   }
 }
 
 @media (min-width: $desktop-width) {
+
   .about-app__advantages-container {
     flex-direction: column-reverse;
-  }
-
-  .about-app__advantages-block {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 
   .about-app__slogan {
@@ -153,12 +163,12 @@
     font-size: 50px;
     line-height: 58px;
     max-width: 750px;
-    margin: 50px auto 0;
+    margin: 67px auto 0;
   }
 
   .about-app__slogan--last {
     max-width: 650px;
-    margin: 10px auto 50px;
+    margin: 5px auto 30px;
   }
 
   .about-app__advantages-wrapper {
@@ -167,42 +177,50 @@
 
   .about-app__advantages-list {
     flex-direction: row;
-    justify-content: space-around;
     text-align: center;
     width: auto;
+    margin-top: 40px;
   }
 
   .about-app__advantages-item {
     box-sizing: border-box;
-    flex-basis: 320px;
+    width: 250px;
+    margin-right: 72px;
+  }
+
+  .about-app__advantages-item:last-child {
+    margin-right: 0;
   }
 
   .about-app__advantages-title {
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    padding: 10px 30px 0;
+    padding: 10px 0 0;
+  }
+
+  .about-app__advantages-title br {
+    display: block;
   }
 
   .about-app__advantages-description {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    padding: 0 37px;
+    padding: 0 5px;
   }
 
   .about-app__images-block {
-    order: 10;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: auto;
+    justify-content: flex-start;
+    order: 10;
+    margin-top: 25px;
   }
 
   .about-app__image-wrapper {
     display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    width: 270px;
+    widows: 320px;
     margin-bottom: 30px;
     background-image: url("/img/phone-shaddow.png");
     background-size: 294px, 17px;
@@ -210,15 +228,15 @@
     background-position: center 328px;
     padding: 0;
     margin: 0;
+    margin-right: 35px;
   }
 
   .about-app__image {
-    width: 188px;
-    height: 337px;
+    width: 292px;
+    height: 302px;
   }
 
   .about-app__main-image {
-    margin-top: 0;
-    margin-right: 0;
+    margin-left: 60px;
   }
 }
