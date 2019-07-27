@@ -126,7 +126,8 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--last" href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
+              <a class="main-nav__link main-nav__link--last" href="https://up.htmlacademy.ru/adaptive/17">HTML
+                Academy</a>
             </li>
           </ul>
         </nav>
@@ -170,10 +171,8 @@
 
     <section class="about-app">
       <h2 class="visually-hidden">Информация о приложении</h2>
-      <div class="about-app__slogan-wrapper container">
-        <p class="about-app__slogan">Устали от серости мегаполиса?</p>
-        <p class="about-app__slogan">Нам есть, что вам предложить!</p>
-      </div>
+      <p class="about-app__slogan">Устали от серости мегаполиса?</p>
+      <p class="about-app__slogan about-app__slogan--last">Нам есть, что вам предложить!</p>
       <div class="about-app__advantages-block">
         <div class="about-app__advantages-container container">
           <div class="about-app__advantages-wrapper">
@@ -197,13 +196,26 @@
           </div>
           <div class="about-app__images-block">
             <div class="about-app__image-wrapper">
-              <img src="img/iphone-screen-mobile@1x.png" alt="Интерфейс приложения" class="about-app__image">
+              <picture class="about-app__image">
+                <source media="(min-width: 660px)" srcset="/img/iphone-screen-1-tablet@1x.png">
+                <source media="(min-width: 960px)" srcset="/img/iphone-screen-1-desktop@1x.png">
+                <img class="about-app__image" src="/img/iphone-screen-1-desktop@1x.png" alt="Интерфейс приложения">
+              </picture>
             </div>
             <div class="about-app__image-wrapper">
-              <img src="img/iphone-screen-mobile@1x.png" alt="Интерфейс приложения" class="about-app__image">
+              <picture class="about-app__image">
+                <source media="(min-width: 960px)" srcset="/img/iphone-screen-2-tablet@1x.png">
+                <source media="(min-width: 660px)" srcset="/img/iphone-screen-2-desktop@1x.png">
+                <img class="about-app__image" src="/img/iphone-screen-2-desktop@1x.png" alt="Интерфейс приложения">
+              </picture>
             </div>
             <div class="about-app__image-wrapper about-app__main-image">
-              <img src="img/iphone-screen-mobile@1x.png" alt="Интерфейс приложения" class="about-app__image">
+              <picture class="about-app__image">
+                <source media="(min-width: 960px)" srcset="/img/iphone-screen-3-tablet@1x.png">
+                <source media="(min-width: 660px)" srcset="/img/iphone-screen-3-tablet@1x.png">
+                <source media="(min-width: 280px)" srcset="/img/iphone-screen-3-tablet@1x.png">
+                <img class="about-app__image" src="/img/iphone-screen-3-desktop@1x.png" alt="Интерфейс приложения">
+              </picture>
             </div>
           </div>
         </div>
@@ -213,8 +225,8 @@
     <section class="effect">
       <h2 class="visually-hidden"> Быстрый положительный эффект</h2>
       <div class="effect-wrap container">
-        <div class="effect__image-wrapper">
-          <img class="effect__image" src="../img/effect.png" alt="быстрый эффект" width="298" height="345">
+        <div class="effect__label-wrapper">
+          <span class="effect__label">24</span>
         </div>
 
         <div class="effect__infp-wrapper">

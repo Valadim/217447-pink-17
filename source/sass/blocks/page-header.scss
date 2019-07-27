@@ -4,7 +4,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  //background-size: cover;
 }
 
 .page-header__nav-wrap {
@@ -154,14 +154,14 @@
   align-items: center;
   align-content: center;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: left 120px;
+  background-position: left 107px;
   background-repeat: no-repeat;
-  background-size: 260px 290px;
+  background-size: 259px;
 }
 
 .page-header__slogan {
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 0 45px;
   font-size: 24px;
   font-weight: 300;
@@ -178,7 +178,7 @@
   align-items: center;
   background-color: $main-color;
   width: 100%;
-  margin-top: 298px;
+  margin-top: 303px;
   padding: 25px 0 0;
   box-sizing: border-box;
 }
@@ -195,7 +195,9 @@
   display: block;
   border: 3px solid $text-light;
   color: $text-light;
-  margin-bottom: 30px;
+  padding: 15px 38px;
+  margin-top: 5px;
+  margin-bottom: 37px;
 }
 
 .page-header__marketplace-list {
@@ -203,10 +205,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
 
   @include list-normilize;
 
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .page-header__marketplace-list-item {
@@ -224,16 +227,16 @@
   color: $text-light;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    //background-size: cover;
     text-transform: none;
   }
 
@@ -273,6 +276,19 @@
     margin: 0;
   }
 
+  .main-nav__link {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 32px;
+    color: $text-light;
+    text-decoration: none;
+    padding: 16px 0;
+    background-color: $main-color;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+
  .page-header__title-wrapper {
     display: flex;
     flex-direction: column;
@@ -288,9 +304,9 @@
 
   .page-header__slogan {
     width: 300px;
-    padding: 0 60px;
-    margin-top: 100px;
-    margin-bottom: 35px;
+    padding: 0 54px;
+    margin-top: 90px;
+    margin-bottom: 25px;
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
@@ -300,24 +316,41 @@
   }
 
   .page-header__download-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: transparent;
-    width: 300px;
-    text-align: center;
+    width: 310px;
     margin-top: 0;
     padding: 0;
   }
 
   .page-header__button-download {
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 47px;
+    padding: 15px 45px;
   }
 
   .page-header__marketplace-list {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+  }
+
+  .page-header__marketplace-list {
+    width: 300px;
+   }
+
+  .page-header__marketplace-list-item {
+    margin-right: 35px;
+  }
+
+  .page-header__marketplace-list-item:last-child {
+    margin-right: 0;
   }
 
   .page-header__legend {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 26px;
     padding: 0;
     margin-bottom: 110px;
   }
@@ -392,7 +425,7 @@
     font-weight: 300;
     text-transform: none;
     padding: 43px 42px;
-    // margin-right: 40px;
+    border: none;
     background-color: transparent;
     box-sizing: border-box;
 
