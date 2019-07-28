@@ -24,7 +24,6 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: left top;
-
 }
 
 .about-app__advantages-container {
@@ -147,15 +146,13 @@
   .about-app__image {
     width: 268px;
     height: 481px;
-
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .about-app__advantages-container {
     flex-direction: column-reverse;
-    margin-top: 50px;
+    margin-top: 75px;
   }
 
   .about-app__slogan {
@@ -179,7 +176,8 @@
     flex-direction: row;
     text-align: center;
     width: auto;
-    margin-top: 40px;
+    margin-top: 45px;
+    margin-left: 14px;
   }
 
   .about-app__advantages-item {
@@ -208,6 +206,7 @@
     line-height: 30px;
     text-align: center;
     padding: 0 5px;
+    margin-top: 25px;
   }
 
   .about-app__images-block {
@@ -215,20 +214,22 @@
     flex-direction: row;
     justify-content: flex-start;
     order: 10;
-    margin-top: 25px;
+    margin-top: 0;
   }
 
   .about-app__image-wrapper {
     display: inline-flex;
     widows: 320px;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
     background-image: url("/img/phone-shaddow.png");
     background-size: 294px, 17px;
     background-repeat: no-repeat;
     background-position: center 328px;
     padding: 0;
-    margin: 0;
-    margin-right: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 17px;
+    margin-left: 14px;
   }
 
   .about-app__image {
@@ -237,6 +238,6 @@
   }
 
   .about-app__main-image {
-    margin-left: 60px;
+    margin-left: 78px;
   }
 }

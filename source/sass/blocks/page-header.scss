@@ -235,8 +235,6 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 68px;
 }
 
 .page-header__header-title {
@@ -245,7 +243,7 @@
   font-weight: 300;
   line-height: 28px;
   text-align: center;
-  padding: 0 50px;
+  padding: 15px 50px 68px;
 }
 
 @media (min-width: $tablet-width) {
@@ -260,8 +258,6 @@
   .page-header__nav-wrap {
     background-color: rgba(0, 0, 0, 0.3);
   }
-
-  .page-header__container {}
 
   .page-header__logo-wrapper {
     width: 620px;
@@ -306,7 +302,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 1);
   }
 
- .page-header__title-wrapper {
+  .page-header__title-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -351,11 +347,8 @@
 
   .page-header__marketplace-list {
     margin-bottom: 25px;
-  }
-
-  .page-header__marketplace-list {
     width: 300px;
-   }
+  }
 
   .page-header__marketplace-list-item {
     margin-right: 35px;
@@ -374,14 +367,12 @@
 
   .page-header__title {
     margin-bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 120px;
   }
 
   .page-header__header-title {
     font-size: 50px;
     line-height: 58px;
-    padding: 0 50px;
+    padding: 30px 50px 120px;
   }
 }
 
@@ -409,6 +400,7 @@
   .page-header__logo-wrapper {
     width: 140px;
     margin: 0;
+    padding-left: 10px;
   }
 
 
@@ -445,7 +437,6 @@
 
   .main-nav__item {
     width: auto;
-
   }
 
   .main-nav__link {
@@ -453,7 +444,7 @@
     line-height: 18px;
     font-weight: 300;
     text-transform: none;
-    padding: 43px 42px;
+    padding: 43px 41px;
     border: none;
     background-color: transparent;
     box-sizing: border-box;
@@ -472,8 +463,6 @@
 
   .main-nav__link--last {
     padding-right: 20px;
-    // margin-right: 0;
-
   }
 
   .main-nav__item--active {
@@ -485,9 +474,9 @@
       position: absolute;
       right: 40px;
       left: 40px;
-      bottom: 10px;
+      bottom: 27px;
       height: 2px;
-      background-color: #fff;
+      background-color: #ffffff;
     }
 
     &:hover::after,
@@ -513,7 +502,7 @@
     width: 960px;
     margin: 0 auto;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 15px bottom;
+    background-position: 25px bottom;
     background-repeat: no-repeat;
     background-size: 1053px 649px;
   }
@@ -522,7 +511,8 @@
     width: 300px;
     padding: 0;
     margin-top: 115px;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
+    margin-left: 10px;
     font-size: 50px;
     font-weight: 300;
     line-height: 60px;
@@ -532,7 +522,7 @@
 
   .page-header__download-wrapper {
     background-color: transparent;
-    width: 300px;
+    width: 320px;
     text-align: center;
     margin-bottom: 65px;
     padding: 0;
@@ -540,13 +530,15 @@
 
   .page-header__button-download {
     margin-bottom: 70px;
-    padding: 15px 28px;
+    margin-left: 10px;
+    padding: 15px 29px;
     font-size: 21px;
     line-height: 18px;
   }
 
   .page-header__marketplace-list {
     margin-bottom: 45px;
+    margin-left: 10px;
   }
 
   .page-header__image-wrapper {
@@ -559,19 +551,17 @@
   }
 
   .page-header__legend {
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 
   .page-header__title {
-    margin-bottom: 140px;
-    padding-top: 60px;
-    padding-bottom: 100px;
+    margin-bottom: 0;
   }
 
   .page-header__header-title {
     font-size: 50px;
-    line-height: 58px;
-    padding: 0 50px;
+    line-height: 60px;
+    padding: 35px 0 68px;
     text-align: center;
   }
 }
