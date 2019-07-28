@@ -5,6 +5,7 @@
   text-align: center;
   font-weight: 300;
   margin-bottom: 50px;
+  margin-top: 45px;
   padding: 0 35px;
 }
 
@@ -29,6 +30,15 @@
   background-color: $accent-color;
 }
 
+.user-photos__image {
+  width: 280px;
+  height: 180px;
+}
+
+.user-photos__promo-image {
+  vertical-align: bottom;
+}
+
 .user-photos__posts-wrapper {
   display: flex;
   flex-direction: column;
@@ -40,7 +50,7 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   box-sizing: border-box;
 }
 
@@ -58,9 +68,10 @@
   justify-content: flex-start;
   flex-grow: 1;
   background-color: $bg-alt;
-  padding: 20px 15px;
+  padding: 18px 17px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  min-height: 120px;
   width: 280px;
   box-sizing: border-box;
 }
@@ -70,11 +81,11 @@
   flex-direction: column;
   justify-content: center;
   background-color: $bg-alt;
-  padding: 20px 15px;
+  padding: 17px 17px;
   width: 280px;
   box-sizing: border-box;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .user-photos__author-block {
@@ -119,10 +130,8 @@
     line-height: 30px;
     color: $main-color;
     text-align: center;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-bottom: 90px;
-    margin-left: auto;
+    margin: 84px auto 77px;
+    padding: 0px 80px;
     max-width: 600px;
   }
 
@@ -132,8 +141,14 @@
   }
 
   .user-photos__promo-tag {
-    top: 50px;
-    right: 15%;
+    padding: 12px 20px;
+    top: 57px;
+    right: 20px;
+  }
+
+  .user-photos__promo-image {
+    width: 700px;
+    height: 509px;
   }
 
   .user-photos__posts-wrapper {
@@ -147,7 +162,12 @@
     width: 300px;
     box-sizing: border-box;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+  }
+
+  .user-photos__image {
+    width: 300px;
+    height: 300px;
   }
 
   .user-photos__author-block {
@@ -162,40 +182,62 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 660px;
-    margin-bottom: 20px;
+    width: 620px;
+    margin-bottom: 42px;
+    padding: 23px 28px;
   }
 
   .user-photos__post-info {
     width: 300px;
-    padding: 20px 15px;
-    margin-bottom: 20px;
+    padding: 24px 27px;
+    margin-bottom: 0;
     box-sizing: border-box;
+    min-height: 155px;
+  }
+
+  .user-photos__photo-description {
+    margin-bottom: 12px;
+  }
+
+  .user-photos__like-block {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 0;
+    padding-left: 0;
+    background-position: 228px center;
+    background-repeat: no-repeat;
   }
 
   .user-photos__like-block--prommo {
     order: 15;
     margin-left: auto;
+    padding-right: 27px;
+    background-position: right center;
+    background-repeat: no-repeat;
   }
 }
+  @media (min-width: $desktop-width) {
+    .user-photos__promo-wrapper {
+      width: 100%;
+      margin-bottom: 0;
+    }
 
-@media (min-width: $desktop-width) {
-  .user-photos__promo-wrapper {
-    width: 100%;
-    margin-bottom: 0;
-  }
+    .user-photos__promo-tag {
+      top: 50px;
+      right: 15%;
+    }
 
-  .user-photos__promo-tag {
-    top: 50px;
-    right: 15%;
-  }
+    .user-photos__promo-image {
+      width: 100%;
+    }
 
-  .user-photos__promo-image {
-    width: 100%;
-  }
+    .user-photos__post-info--prommo {
+      width: 960px;
+      margin-bottom: 20px;
+    }
 
-  .user-photos__post-info--prommo {
-    width: 960px;
-    margin-bottom: 20px;
+    .user-photos__image {
+      width: 300px;
+      height: 400px;
+    }
   }
-}
