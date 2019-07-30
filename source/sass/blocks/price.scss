@@ -1,4 +1,4 @@
-.pricing-plans {
+.price {
   background-color: $bg-alt;
   background-image: url("../img/bg-triangle-white.svg");
   background-size: 100%;
@@ -6,33 +6,33 @@
   background-position: left top;
 }
 
-.pricing-plans__slider {
+.price__slider {
   overflow-x: scroll;
 }
 
-.pricing-plans__wrapper {
+.price__wrapper {
   width: 280px;
   margin: 0 auto;
 }
 
-.pricing-plans__feature-field {
+.price__feature-field {
   padding-right: 70px;
   white-space: nowrap;
 }
 
-.pricing-plans__pricing-list th:first-child {
+.price__pricing-list th:first-child {
   display: none;
 }
 
-.pricing-plans__feature-name:first-child {
+.price__feature-name:first-child {
   display: none;
 }
 
-.pricing-plans__feature-name {
+.price__feature-name {
   position: relative;
 }
 
-.pricing-plans__feature-marker--no::before {
+.price__marker-no::before {
     content: "";
     position: absolute;
     top: 0;
@@ -45,7 +45,7 @@
   }
 
 
-.pricing-plans__feature-marker--yes::before {
+.price__marker-yes::before {
     content: "";
     position: absolute;
     top: 0;
@@ -59,31 +59,27 @@
 
 
 @media (min-width: $tablet-width) {
-  .pricing-plans__wrapper {
+  .price__wrapper {
     width: 640px;
   }
-  .pricing-plans__slider {
+  .price__slider {
     overflow-x: visible;
   }
 
-  .pricing-plans__pricing-list th:first-child {
+  .price__pricing-list th:first-child {
     display: block;
   }
 
-  .pricing-plans__feature-name:first-child {
+  .price__feature-name:first-child {
     display: block;
     background-color: green;
   }
 
-  .pricing-plans__feature-field {
+  .price__feature-field {
     display: none;
   }
 
-  .pricing-plans__feature-marker--no,
-  .pricing-plans__feature-marker--yes {
-  }
-
-  .pricing-plans__feature-marker--no::before {
+  .price__marker-no::before {
     content: "";
     position: absolute;
     top: 0;
@@ -97,7 +93,7 @@
   }
 
 
-.pricing-plans__feature-marker--yes::before {
+.price__marker-yes::before {
     content: "";
     position: absolute;
     top: 0;
@@ -109,13 +105,10 @@
     background-position: 0 0;
     background-repeat: no-repeat;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-  .pricing-plans__wrapper {
+  .price__wrapper {
     width: 940px;
   }
-
-
 }

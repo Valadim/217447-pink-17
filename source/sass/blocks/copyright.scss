@@ -1,0 +1,32 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.copyright__link {
+  display: flex;
+  text-decoration: none;
+}
+
+.copyright__text {
+  align-self: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: $main-color;
+  margin-right: 10px;
+}
+
+.copyright__image {
+  fill: $accent-color;
+  width: 35px;
+  height: 44px;
+}
+
+@media (min-width: $tablet-width) {
+ .copyright {
+    margin: 0;
+  }
+}
