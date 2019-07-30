@@ -1,0 +1,132 @@
+.advantages {
+  background-color: $bg-alt;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.advantages__list {
+  @include list-normilize;
+
+  text-align: center;
+}
+
+.advantages__item {
+  margin-bottom: 28px;
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $text-black;
+}
+
+.advantages__title br {
+  display: none;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: $text-dark;
+}
+
+.advantages__image {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 640px;
+    padding-top: 0;
+  }
+
+  .advantages__main-image {
+    order: 10;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+    text-align: left;
+    margin-top: 68px;
+    //max-width: 310px;
+    margin-left: 70px;
+    order: 20;
+  }
+
+  .advantages__item {
+    margin-bottom: 33px;
+  }
+
+ .advantages__main-image {
+    width: 268px;
+    height: 481px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__container {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .advantages__main-image {
+    display: none;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+
+  .advantages__item {
+    text-align: center;
+    margin-bottom: 0;
+    width: 292px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .advantages__image {
+    display: inline-block;
+    width: 292px;
+    height: 302px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 10px 0 0;
+  }
+
+  .advantages__title br {
+    display: block;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 25px;
+    margin-top: 25px;
+  }
+}

@@ -17,90 +17,8 @@
   margin: 30px auto 40px;
 }
 
-.about-app__advantages-block {
-  padding-top: 77px;
-  background-color: $bg-alt;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-
-.about-app__advantages-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-app__advantages-list {
-  @include list-normilize;
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 280px;
-  margin: 0 auto 10px;
-}
-
-.about-app__advantages-item {
-  margin-bottom: 28px;
-}
-
-.about-app__advantages-title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 13px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $text-black;
-}
-
-.about-app__advantages-title br {
-  display: none;
-}
-
-.about-app__advantages-description {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  color: $text-dark;
-}
-
-.about-app__images-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.about-app__image-wrapper {
-  display: none;
-}
-
-.about-app__main-image {
-  display: inline-flex;
-  justify-content: center;
-  width: 157px;
-  height: 282px;
-  margin: 0 auto;
-}
-
-
 @media (min-width: $tablet-width) {
-  .about-app__advantages-block {
-    padding-top: 0;
-  }
-
-  .about-app__advantages-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .about-app__advantages-wrapper {
-    order: 20;
-  }
-
   .about-app__slogan {
-    text-align: center;
     font-size: 40px;
     line-height: 48px;
     max-width: 600px;
@@ -111,52 +29,10 @@
     max-width: 550px;
     margin: 0 auto 50px;
   }
-
-  .about-app__advantages-list {
-    flex-direction: column;
-    text-align: left;
-    margin-top: 68px;
-    padding-left: 20px;
-    width: 310px;
-  }
-
-  .about-app__advantages-item {
-    margin-bottom: 33px;
-  }
-
-  .about-app__advantages-title {
-    text-align: left;
-  }
-
-  .about-app__advantages-description {
-    text-align: left;
-  }
-
-  .about-app__images-block {
-    order: 10;
-    flex-direction: row;
-    width: 300px;
-  }
-
-  .about-app__main-image {
-    display: inline-flex;
-    margin-left: 55px;
-  }
-
-  .about-app__image {
-    width: 268px;
-    height: 481px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .about-app__advantages-container {
-    flex-direction: column-reverse;
-    margin-top: 75px;
-  }
-
   .about-app__slogan {
-    text-align: center;
     font-size: 50px;
     line-height: 58px;
     max-width: 750px;
@@ -166,78 +42,5 @@
   .about-app__slogan--last {
     max-width: 650px;
     margin: 5px auto 30px;
-  }
-
-  .about-app__advantages-wrapper {
-    order: 9;
-  }
-
-  .about-app__advantages-list {
-    flex-direction: row;
-    text-align: center;
-    width: auto;
-    margin-top: 45px;
-    margin-left: 14px;
-  }
-
-  .about-app__advantages-item {
-    box-sizing: border-box;
-    width: 250px;
-    margin-right: 72px;
-  }
-
-  .about-app__advantages-item:last-child {
-    margin-right: 0;
-  }
-
-  .about-app__advantages-title {
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    padding: 10px 0 0;
-  }
-
-  .about-app__advantages-title br {
-    display: block;
-  }
-
-  .about-app__advantages-description {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    padding: 0 5px;
-    margin-top: 25px;
-  }
-
-  .about-app__images-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    order: 10;
-    margin-top: 0;
-  }
-
-  .about-app__image-wrapper {
-    display: inline-flex;
-    widows: 320px;
-    //margin-bottom: 30px;
-    background-image: url("../img/phone-shaddow.png");
-    background-size: 294px, 17px;
-    background-repeat: no-repeat;
-    background-position: center 328px;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 17px;
-    margin-left: 14px;
-  }
-
-  .about-app__image {
-    width: 292px;
-    height: 302px;
-  }
-
-  .about-app__main-image {
-    margin-left: 78px;
   }
 }
