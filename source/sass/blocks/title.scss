@@ -1,0 +1,113 @@
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: left 107px;
+  background-repeat: no-repeat;
+  background-size: 259px;
+}
+
+.title__slogan {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 0 45px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  color: $text-light;
+  text-align: center;
+}
+
+.title__title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.title__header-title {
+  color: $text-light;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  padding: 15px 50px 68px;
+}
+
+@media (min-width: $tablet-width) {
+  .title__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 620px;
+    margin: 0 auto;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -40px bottom;
+    background-repeat: no-repeat;
+    background-size: 700px;
+  }
+
+  .title__slogan {
+    width: 300px;
+    padding: 0 54px;
+    margin-top: 90px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: $text-light;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .title__title {
+    margin-bottom: 0;
+  }
+
+  .title__header-title {
+    font-size: 50px;
+    line-height: 58px;
+    padding: 30px 50px 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 960px;
+    margin: 0 auto;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 25px bottom;
+    background-repeat: no-repeat;
+    background-size: 1053px 649px;
+  }
+
+  .title__slogan {
+    width: 300px;
+    padding: 0;
+    margin-top: 115px;
+    margin-bottom: 46px;
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    color: $text-light;
+    text-align: center;
+  }
+
+  .title__title {
+    margin-bottom: 0;
+  }
+
+  .title__header-title {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 35px 0 68px;
+    text-align: center;
+  }
+}

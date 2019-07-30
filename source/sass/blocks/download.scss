@@ -1,0 +1,119 @@
+.download{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: $main-color;
+  width: 100%;
+  margin-top: 303px;
+  padding: 25px 0 0;
+  box-sizing: border-box;
+}
+
+.download__button {
+  @include button;
+
+  display: block;
+  border: 3px solid $text-light;
+  color: $text-light;
+  padding: 15px 38px;
+  margin-top: 5px;
+  margin-bottom: 37px;
+}
+
+.download__list {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  @include list-normilize;
+
+  margin-bottom: 12px;
+}
+
+.download__item {
+  margin-right: 35px;
+}
+
+.download__item:last-child {
+  margin-right: 0;
+}
+
+.download__legend {
+  font: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $text-light;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 28px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 310px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .download__button {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 47px;
+    padding: 15px 45px;
+  }
+
+  .download__list {
+    margin-bottom: 25px;
+    width: 300px;
+  }
+
+  .download__item {
+    margin-right: 35px;
+  }
+
+  .download__item:last-child {
+    margin-right: 0;
+  }
+
+  .download__legend {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0;
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    background-color: transparent;
+    width: 320px;
+    text-align: center;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .download__button {
+    margin-bottom: 70px;
+    margin-left: 10px;
+    padding: 15px 29px;
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  .download__list {
+    margin-bottom: 45px;
+    margin-left: 10px;
+  }
+
+  .download__legend {
+    margin-bottom: 54px;
+  }
+}

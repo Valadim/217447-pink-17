@@ -61,7 +61,7 @@
 //   display: block;
 // }
 
-// .main-nav--nojs .site-list__item--active a {
+// .main-nav--nojs .site-list__link--active a {
 //   padding-right: 21px;
 //   padding-left: 21px;
 
@@ -105,7 +105,7 @@
   }
 }
 
-.main-nav__item--active {
+.main-nav__link--active {
   color: $accent-color;
 }
 
@@ -182,7 +182,7 @@
     padding-right: 20px;
   }
 
-  .main-nav__item--active {
+  .main-nav__link--active {
     position: relative;
     color: #ffffff;
 
