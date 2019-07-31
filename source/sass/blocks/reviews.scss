@@ -5,8 +5,6 @@
   padding-bottom: 40px;
 }
 
-.reviews__list {}
-
 .reviews__item {
   display: flex;
   flex-direction: column;
@@ -68,27 +66,21 @@
     width: 6px;
     height: 6px;
     background-color: #bec2c7;
-    border-radius: 50%
+    border-radius: 50%;
   }
 }
 
-.reviews__toggle--active {
-  &::after {
-    content: "";
-    position: absolute;
-    top: -3px;
-    right: -3px;
-    width: 6px;
-    height: 6px;
-    background-color: #ffffff;
-    border: 3px solid $main-color;
-    border-radius: 50%
-  }
+.reviews__toggle--active::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border: 3px solid $main-color;
+  border-radius: 50%;
 }
-
-
-
-
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {

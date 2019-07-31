@@ -33,35 +33,34 @@
 }
 
 .price__marker-no::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-no.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-no.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
 
 .price__marker-yes::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background-image: url("../img/icon-yes.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
-
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-yes.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
 
 @media (min-width: $tablet-width) {
   .price__wrapper {
     width: 640px;
   }
+
   .price__slider {
     overflow-x: visible;
   }
@@ -92,8 +91,7 @@
     background-repeat: no-repeat;
   }
 
-
-.price__marker-yes::before {
+  .price__marker-yes::before {
     content: "";
     position: absolute;
     top: 0;
