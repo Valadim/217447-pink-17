@@ -1,3 +1,25 @@
-.page-footer__contacts-link {
-  text-decoration: none;
+.page-footer-inner__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer-inner {
+    padding: 20px 0;
+  }
+
+  .page-footer-inner__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .page-footer-inner__logo-wrapper {
+    margin: 0;
+  }
 }

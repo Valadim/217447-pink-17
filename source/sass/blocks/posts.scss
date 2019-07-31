@@ -1,0 +1,246 @@
+.posts__intro-text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $main-color;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 50px;
+  margin-top: 45px;
+  padding: 0 35px;
+}
+
+.posts__list {
+  @include list-normilize;
+
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.posts__item {
+  margin-bottom: 20px;
+}
+
+.posts__item--promo {
+  width: 280px;
+}
+
+.posts__promo-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.posts__promo-tag {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: $text-light;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: $accent-color;
+  z-index: 9;
+}
+
+.posts__image {
+  width: 280px;
+  height: 180px;
+  vertical-align: bottom;
+}
+
+.posts__image--promo {
+  width: 100%;
+  height: auto;
+}
+
+.posts__image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.posts__post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  background-color: $bg-alt;
+  padding: 18px 17px;
+  min-height: 120px;
+  width: 280px;
+  box-sizing: border-box;
+}
+
+.posts__post-info--prommo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $bg-alt;
+  padding: 17px 17px;
+  width: 280px;
+  box-sizing: border-box;
+  margin-bottom: 23px;
+}
+
+.posts__author-block {
+  order: 10;
+  width: 280px;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.posts__time {
+  font-weight: 300;
+}
+
+.posts__description {
+  order: 20;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .posts__intro-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: $main-color;
+    text-align: center;
+    margin: 84px auto 77px;
+    padding: 0 80px;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+
+  .posts__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  .posts__promo-wrapper {
+    width: 100%;
+  }
+
+  .posts__item--promo {
+    width: 620px;
+  }
+
+
+  .posts__promo-tag {
+    padding: 12px 20px;
+    top: 57px;
+    right: 20px;
+  }
+
+  .posts__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .posts__image--promo {
+    width: 620px;
+    height: 509px;
+  }
+
+  .posts__posts-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .posts__user-post {
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  .posts__author-block {
+    order: 10;
+    width: 280px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .posts__post-info {
+    width: 300px;
+    padding: 24px 27px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    min-height: 155px;
+  }
+
+  .posts__post-info--prommo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 620px;
+    margin-bottom: 42px;
+    padding: 23px 28px;
+    min-height: auto;
+  }
+
+  .posts__description {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .posts__intro-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: $main-color;
+    text-align: center;
+    margin: 92px auto 88px;
+    padding: 0 80px;
+    max-width: 600px;
+  }
+
+  .posts__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+  }
+
+  .posts__item--promo {
+    width: 940px;
+  }
+
+  .posts__promo-wrapper {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .posts__promo-tag {
+    top: 54px;
+    right: 10.8%;
+  }
+
+  .posts__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .posts__image--promo {
+    width: 100%;
+    height: auto;
+  }
+
+  .posts__post-info--prommo {
+    width: 940px;
+    margin-bottom: 52px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+  }
+}

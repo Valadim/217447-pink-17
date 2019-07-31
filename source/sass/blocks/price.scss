@@ -1,0 +1,112 @@
+.price {
+  background-color: $bg-alt;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.price__slider {
+  overflow-x: scroll;
+}
+
+.price__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.price__feature-field {
+  padding-right: 70px;
+  white-space: nowrap;
+}
+
+.price__pricing-list th:first-child {
+  display: none;
+}
+
+.price__feature-name:first-child {
+  display: none;
+}
+
+.price__feature-name {
+  position: relative;
+}
+
+.price__marker-no::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-no.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.price__marker-yes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-yes.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .price__wrapper {
+    width: 640px;
+  }
+
+  .price__slider {
+    overflow-x: visible;
+  }
+
+  .price__pricing-list th:first-child {
+    display: block;
+  }
+
+  .price__feature-name:first-child {
+    display: block;
+    background-color: green;
+  }
+
+  .price__feature-field {
+    display: none;
+  }
+
+  .price__marker-no::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-no.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .price__marker-yes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon-yes.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__wrapper {
+    width: 940px;
+  }
+}

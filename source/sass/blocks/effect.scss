@@ -40,11 +40,13 @@
     background-position: center 55px, center;
   }
 
-  .effect-wrap {
+  .effect__wrap {
     display: flex;
+    width: 620px;
+    margin: 0 auto;
   }
 
-  .effect__infp-wrapper {
+  .effect__info-wrapper {
     max-width: 310px;
     margin-left: 65px;
   }
@@ -64,7 +66,7 @@
     margin-bottom: 10px;
   }
 
-  .effect_link-wrapper {
+  .effect__link-wrapper {
     margin-top: 0;
   }
 
@@ -83,6 +85,11 @@
     background-color: $bg-alt;
     padding: 10px 0;
   }
+
+  .effect__wrap {
+    width: 940px;
+  }
+
 
   .effect__label {
     position: relative;
@@ -109,7 +116,7 @@
     background-position: center 70px, center;
   }
 
-  .effect__infp-wrapper {
+  .effect__info-wrapper {
     max-width: 520px;
     margin-left: 80px;
     margin-top: 80px;
