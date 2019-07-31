@@ -1,4 +1,4 @@
-.user-photos__intro-text {
+.posts__intro-text {
   font-size: 14px;
   line-height: 30px;
   color: $main-color;
@@ -9,7 +9,7 @@
   padding: 0 35px;
 }
 
-.user-photos__list {
+.posts__list {
   @include list-normilize;
 
   display: flex;
@@ -18,15 +18,15 @@
   margin: 0 auto;
 }
 
-.user-photos__item {
+.posts__item {
   margin-bottom: 20px;
 }
 
-.user-photos__item--promo {
+.posts__item--promo {
   width: 320px;
 }
 
-.user-photos__promo-wrapper {
+.posts__promo-wrapper {
   display: flex;
   justify-content: center;
   position: relative;
@@ -34,7 +34,7 @@
   margin-bottom: 0;
 }
 
-.user-photos__promo-tag {
+.posts__promo-tag {
   position: absolute;
   top: 0;
   right: 20px;
@@ -47,22 +47,22 @@
   background-color: $accent-color;
 }
 
-.user-photos__image {
+.posts__image {
   width: 280px;
   height: 180px;
   vertical-align: bottom;
 }
 
-.user-photos__promo-image {
+.posts__promo-image {
   vertical-align: bottom;
 }
 
-// .user-photos__posts-wrapper {
+// .posts__posts-wrapper {
 //   display: flex;
 //   flex-direction: column;
 // }
 
-.user-photos__image-wrapper {
+.posts__image-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -70,7 +70,7 @@
   padding: 0;
 }
 
-.user-photos__post-info {
+.posts__post-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -84,7 +84,7 @@
   box-sizing: border-box;
 }
 
-.user-photos__post-info--prommo {
+.posts__post-info--prommo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +96,7 @@
   margin-bottom: 23px;
 }
 
-.user-photos__author-block {
+.posts__author-block {
   order: 10;
   width: 280px;
   margin-top: 0;
@@ -104,36 +104,18 @@
   box-sizing: border-box;
 }
 
-.user-photos__time {
+.posts__time {
   font-weight: 300;
 }
 
-.user-photos__description {
+.posts__description {
   order: 20;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.user-photos__like-icon {
-  width: 13px;
-  height: 12px;
-  fill: $accent-color;
-}
-
-.user-photos__like-block {
-  order: 30;
-  margin: 0;
-  margin-top: auto;
-  padding-left: 30px;
-  color: $accent-color;
-  background-image: url("../img/icon-heart.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 13px 12px;
-}
-
 @media (min-width: $tablet-width) {
-  .user-photos__intro-text {
+  .posts__intro-text {
     font-size: 18px;
     line-height: 30px;
     color: $main-color;
@@ -143,53 +125,53 @@
     max-width: 600px;
   }
 
-  .user-photos__list {
+  .posts__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 620px;
   }
 
-  .user-photos__promo-wrapper {
+  .posts__promo-wrapper {
     width: 100%;
   }
 
-  .user-photos__item--promo {
+  .posts__item--promo {
     width: 660px;
   }
 
 
-  .user-photos__promo-tag {
+  .posts__promo-tag {
     padding: 12px 20px;
     top: 57px;
     right: 20px;
   }
 
-  .user-photos__image--promo {
+  .posts__image--promo {
     width: 700px;
     height: 509px;
   }
 
-  .user-photos__posts-wrapper {
+  .posts__posts-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .user-photos__user-post {
+  .posts__user-post {
     width: 300px;
     box-sizing: border-box;
     margin: 0;
     margin-bottom: 18px;
   }
 
-  .user-photos__image {
+  .posts__image {
     width: 300px;
     height: 300px;
   }
 
-  .user-photos__author-block {
+  .posts__author-block {
     order: 10;
     width: 280px;
     margin-top: 0;
@@ -197,7 +179,7 @@
     box-sizing: border-box;
   }
 
-  .user-photos__post-info {
+  .posts__post-info {
     width: 300px;
     padding: 24px 27px;
     margin-bottom: 0;
@@ -205,7 +187,7 @@
     min-height: 155px;
   }
 
-  .user-photos__post-info--prommo {
+  .posts__post-info--prommo {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -215,30 +197,13 @@
     min-height: auto;
   }
 
-  .user-photos__description {
+  .posts__description {
     margin-bottom: 12px;
-  }
-
-  .user-photos__like-block {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-left: 0;
-    padding-left: 0;
-    background-position: 228px center;
-    background-repeat: no-repeat;
-  }
-
-  .user-photos__like-block--prommo {
-    order: 15;
-    margin-left: auto;
-    padding-right: 27px;
-    background-position: right center;
-    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .user-photos__intro-text {
+  .posts__intro-text {
     font-size: 18px;
     line-height: 30px;
     color: $main-color;
@@ -248,40 +213,40 @@
     max-width: 600px;
   }
 
-  .user-photos__list {
+  .posts__list {
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
   }
 
-  .user-photos__promo-wrapper {
+  .posts__promo-wrapper {
     width: 100%;
     margin-bottom: 0;
   }
 
-  .user-photos__promo-tag {
+  .posts__promo-tag {
     top: 54px;
     right: 10.8%;
   }
 
-  .user-photos__image--promo {
+  .posts__image--promo {
     width: 100%;
     height: auto;
   }
 
-  .user-photos__post-info--prommo {
+  .posts__post-info--prommo {
     width: 940px;
     margin-bottom: 52px;
     padding-right: 32px;
     padding-bottom: 10px;
   }
 
-  .user-photos__posts-wrapper {
+  .posts__posts-wrapper {
     width: 940px;
     margin: 0 auto;
   }
 
-  .user-photos__image {
+  .posts__image {
     width: 300px;
     height: 400px;
   }

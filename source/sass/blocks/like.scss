@@ -1,0 +1,31 @@
+.like {
+  order: 30;
+  margin: 0;
+  margin-top: auto;
+  padding-left: 30px;
+  color: $accent-color;
+  background-image: url("../img/icon-heart.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 13px 12px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .like {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 0;
+    padding-left: 0;
+    background-position: 228px center;
+    background-repeat: no-repeat;
+  }
+
+  .like--prommo {
+    order: 15;
+    margin-left: auto;
+    padding-right: 27px;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+}
