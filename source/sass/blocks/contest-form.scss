@@ -1,3 +1,38 @@
+.contest-form__main-form {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .contest-form__intro-text {
+  color: $main-color;
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.contest-form__legend {
   color: $accent-color;
+}
+
+.contest-form__fieldset {
+  margin-bottom: 30px;
+  border: 2px solid #cccccc;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-form__main-form {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .contest-form__legend {
+    text-align: center;
+    padding: 0px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form__main-form {
+    width: 940px;
+  }
 }
