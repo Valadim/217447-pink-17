@@ -23,12 +23,11 @@
 }
 
 .posts__item--promo {
-  width: 320px;
+  width: 280px;
 }
 
 .posts__promo-wrapper {
   display: flex;
-  justify-content: center;
   position: relative;
   width: 100%;
   margin-bottom: 0;
@@ -45,6 +44,7 @@
   text-transform: uppercase;
   padding: 10px 20px;
   background-color: $accent-color;
+  z-index: 9;
 }
 
 .posts__image {
@@ -53,14 +53,10 @@
   vertical-align: bottom;
 }
 
-.posts__promo-image {
-  vertical-align: bottom;
+.posts__image--promo {
+  width: 100%;
+  height: auto;
 }
-
-// .posts__posts-wrapper {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .posts__image-wrapper {
   display: flex;
@@ -77,8 +73,6 @@
   flex-grow: 1;
   background-color: $bg-alt;
   padding: 18px 17px;
-  margin: 0 auto;
-  margin-bottom: 0;
   min-height: 120px;
   width: 280px;
   box-sizing: border-box;
@@ -92,7 +86,6 @@
   padding: 17px 17px;
   width: 280px;
   box-sizing: border-box;
-  margin: 0 auto;
   margin-bottom: 23px;
 }
 
@@ -122,7 +115,8 @@
     text-align: center;
     margin: 84px auto 77px;
     padding: 0 80px;
-    max-width: 600px;
+    max-width: 500px;
+    box-sizing: border-box;
   }
 
   .posts__list {
@@ -137,7 +131,7 @@
   }
 
   .posts__item--promo {
-    width: 660px;
+    width: 620px;
   }
 
 
@@ -147,8 +141,13 @@
     right: 20px;
   }
 
+  .posts__image {
+    width: 300px;
+    height: 300px;
+  }
+
   .posts__image--promo {
-    width: 700px;
+    width: 620px;
     height: 509px;
   }
 
@@ -164,11 +163,6 @@
     box-sizing: border-box;
     margin: 0;
     margin-bottom: 18px;
-  }
-
-  .posts__image {
-    width: 300px;
-    height: 300px;
   }
 
   .posts__author-block {
@@ -219,6 +213,10 @@
     width: 940px;
   }
 
+  .posts__item--promo {
+    width: 940px;
+}
+
   .posts__promo-wrapper {
     width: 100%;
     margin-bottom: 0;
@@ -227,6 +225,11 @@
   .posts__promo-tag {
     top: 54px;
     right: 10.8%;
+  }
+
+  .posts__image {
+    width: 300px;
+    height: 400px;
   }
 
   .posts__image--promo {
@@ -239,15 +242,5 @@
     margin-bottom: 52px;
     padding-right: 32px;
     padding-bottom: 10px;
-  }
-
-  .posts__posts-wrapper {
-    width: 940px;
-    margin: 0 auto;
-  }
-
-  .posts__image {
-    width: 300px;
-    height: 400px;
   }
 }
