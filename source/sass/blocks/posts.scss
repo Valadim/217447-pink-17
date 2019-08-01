@@ -23,7 +23,8 @@
 }
 
 .posts__item--promo {
-  width: 280px;
+  margin-left: calc((-100vw + 280px) / 2);
+  margin-right: calc((-100vw + 280px) / 2);
 }
 
 .posts__promo-wrapper {
@@ -86,6 +87,7 @@
   padding: 17px 17px;
   width: 280px;
   box-sizing: border-box;
+  margin: 0 auto;
   margin-bottom: 23px;
 }
 
@@ -132,6 +134,7 @@
 
   .posts__item--promo {
     width: 620px;
+    margin: 0 auto;
   }
 
 
@@ -214,7 +217,9 @@
   }
 
   .posts__item--promo {
-    width: 940px;
+    width: 100vw;
+    margin-left: calc((-100vw + 940px) / 2);
+    margin-right: calc((-100vw + 940px) / 2);
   }
 
   .posts__promo-wrapper {
@@ -239,6 +244,7 @@
 
   .posts__post-info--prommo {
     width: 940px;
+    margin: 0 auto;
     margin-bottom: 52px;
     padding-right: 32px;
     padding-bottom: 10px;

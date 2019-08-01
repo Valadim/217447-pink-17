@@ -19,6 +19,81 @@
   border: 2px solid #cccccc;
 }
 
+.contest-form__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 60px;
+
+  &:hover .checkbox-indicator {
+    border-color: $accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-color: $accent-color;
+  }
+
+  &--text {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $accent-color;
+    padding-left: 0;
+  }
+
+  &--phone {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+}
+
+.contest-form__input {
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid $border-color;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $border-color;
+
+  &:hover {
+    border-color: $accent-color;
+  }
+}
+
+.contest-form__checkbox:focus+.checkbox-indicator {
+  border-color: $accent-color;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.contest-form__checkbox:checked+.checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 @media (min-width: $tablet-width) {
   .contest-form__main-form {
     width: 620px;
