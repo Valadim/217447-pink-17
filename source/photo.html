@@ -169,7 +169,7 @@
         </li>
 
         <li class="posts__item">
-          <picture class="posts__image">
+          <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-car-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.jpg">
             <source media="(min-width: 280px)" srcset="./img/photo-car-mobile@1x.jpg">
@@ -185,7 +185,7 @@
           </div>
         </li>
         <li class="posts__item">
-          <picture class="posts__image">
+          <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-drumset-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.jpg">
             <source media="(min-width: 280px)" srcset="./img/photo-drumset-mobile@1x.jpg">
@@ -201,11 +201,11 @@
           </div>
         </li>
         <li class="posts__item">
-          <picture class="posts__image">
+          <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-window-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg">
             <source media="(min-width: 280px)" srcset="./img/photo-window-mobile@1x.jpg">
-            <img class="posts__image" src="./img/photo-drumset-desktop@1x.jpg" alt="Интерфейс приложения">
+            <img class="posts__image" src="./img/photo-window-desktop@1x.jpg" alt="Интерфейс приложения">
           </picture>
           <div class="posts__post-info">
             <p class="posts__author-block">
@@ -217,7 +217,7 @@
           </div>
         </li>
         <li class="posts__item">
-          <picture class="posts__image">
+          <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-fair-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.jpg">
             <source media="(min-width: 280px)" srcset="./img/photo-fair-mobile@1x.jpg">
@@ -233,7 +233,7 @@
           </div>
         </li>
         <li class="posts__item">
-          <picture class="posts__image">
+          <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-pov-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="./img/photo-pov-tablet@1x.jpg">
             <source media="(min-width: 280px)" srcset="./img/photo-pov-mobile@1x.jpg">
@@ -249,7 +249,7 @@
           </div>
         </li>
         <li class="posts__item">
-          <picture class="posts__image">
+          <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-wing-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.jpg">
             <source media="(min-width: 280px)" srcset="./img/photo-wing-mobile@1x.jpg">
@@ -269,13 +269,13 @@
 
     <section class="upload container">
       <h2 class="visually-hidden">Загрузите свое изображение</h2>
-      <p class="upload__intro-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="upload__intro-text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
 
       <form class="editor" action="https://echo.htmlacademy.ru" method="post">
 
         <div class="editor__image-wrapper">
 
-          <picture class="editor__image">
+          <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-road-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="./img/photo-road-tablet@1x.jpg">
             <source media="(min-width: 280px)" srcset="./img/photo-road-mobile@1x.jpg">
@@ -283,11 +283,13 @@
           </picture>
         </div>
 
-        <div class="editor__wrapp">
-          <p class="editor__item">
+        <div class="editor__wrapper">
+
+
+          <!-- <p class="editor__item"> -->
             <button type="button" class="editor__controll editor__controll--crop">
               <span class="visually-hidden">Обрезка изображение</span>
-              <svg class="editor__icon editor__icon--crop" xmlns="http://www.w3.org/2000/svg"
+              <svg class="editor__icon editor__icon--crop editor__icon--active" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
                 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                 <path fill="none" d="M0,0h48v48H0V0z" />
@@ -297,8 +299,10 @@
             </button>
             <label for="crop" class="visually-hidden">Насыщенность</label>
             <input class="editor__range" id="crop" type="range" min="0" max="100" step="1" value="80">
-          </p>
-          <p class="editor__item">
+          <!-- </p> -->
+
+
+          <!-- <p class="editor__item"> -->
             <button type="button" class="editor__controll editor__controll--fill">
               <span class="visually-hidden">Заливка изображение</span>
               <svg class="editor__icon editor__icon--fill" xmlns="http://www.w3.org/2000/svg"
@@ -312,8 +316,10 @@
             </button>
             <label for="fill" class="visually-hidden">Насыщенность</label>
             <input class="editor__range" id="fill" type="range" min="0" max="100" step="1" value="80">
-          </p>
-          <p class="editor__item">
+          <!-- </p> -->
+
+
+          <!-- <p class="editor__item"> -->
             <button type="button" class="editor__controll editor__controll--contrast">
               <span class="visually-hidden">Контраст изображения</span>
               <svg class="editor__icon editor__icon--contrast" xmlns="http://www.w3.org/2000/svg"
@@ -326,8 +332,10 @@
               </svg>
             </button>
             <label for="contrast" class="visually-hidden">Насыщенность</label>
-            <input class="editor__range" id="contrast" type="range" min="0" max="100" step="1" value="80">
-          </p>
+            <input class="editor__range editor__range--last" id="contrast" type="range" min="0" max="100" step="1" value="80">
+          <!-- </p> -->
+
+
           <p class="editor__item editor__item--buttons">
             <button type="submit" class="editor__button">Запостить</button>
             <button type="reset" class="editor__button editor__button--disabled">Отмена</button>
