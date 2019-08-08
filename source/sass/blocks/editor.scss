@@ -107,14 +107,6 @@
   }
 }
 
-// .editor__range-controls--is-active {
-//   position: absolute;
-//   display: block;
-//   top: 90px;
-//   left: 0;
-//   width: 100%;
-// }
-
 .editor__item--buttons {
   display: flex;
   flex-direction: column;
@@ -153,65 +145,90 @@
 
 }
 
-
-
-
 @media (min-width: $tablet-width) {
-
   .editor {
     flex-direction: row;
-    padding: 50px;
+    width: 660px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
+
   .editor__image-wrapper {
-    width: 280px;
+    width: 300px;
     align-self: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .editor__image {
-    width: 280px;
-    height: 384px;
+    width: 300px;
+    height: 400px;
   }
 
   .editor__wrapper {
     position: static;
     justify-content: space-between;
     align-self: flex-start;
-    padding: 0 20px;
-    // width: 320px;
+    box-sizing: border-box;
+    margin: 20px 20px 10px 46px;
   }
 
+  .editor__item {
+    margin-bottom: 45px;
+  }
 
+  .editor__controll {
+    width: 24px;
+    margin-right: 30px;
+    margin-left: 0;
+    padding: 0;
+}
 
-  // .editor__controll {
-  //   flex-basis: 20%;
-  //   margin-bottom: 50px;
-  // }
+  .editor__icon {
+    width: 24px;
+    height: 24px;
+    fill: $accent-color;
+    opacity: 1;
 
-  // .editor__range-controls {
-  //   display: inline-block;
-  //   flex-basis: 70%;
-  //   margin-bottom: 50px;
-  // }
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
 
-  // .editor__range-controls--last {
-  //   position: relative;
-  //   display: inline-block;
-  //   // margin-top: 80px;
-  // top: 0;
-  // }
+    &:hover,
+    &:focus {
+      fill: $main-color;
+    }
+  }
 
-  // .editor__item--buttons {
-  //   flex-grow: 1;
-  // }
+  .editor__range-controls {
+    display: inline-flex;
 
+    &--is-active {
+      position: relative;
+      display: inline-flex;
+      top: 0;
+      width: auto;
+    }
+  }
 
-  // .editor__image {
-  //   width: 300px;
-  //   height: 400px;
-  // }
+  .editor__range-controls .editor__range-bar {
+    width: 202px;
+    height: 2px;
+   }
 
-  // .editor__wrapp {
-  //   margin-left: 70px;
-  // }
+   .editor__button {
+     margin-bottom: 25px;
+   }
+
+  .editor__item--buttons {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

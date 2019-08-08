@@ -6,3 +6,12 @@
   max-width: 280px;
   margin: 45px auto;
 }
+
+@media (min-width: $tablet-width) {
+  .upload__intro-text {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 660px;
+    margin: 70px auto;
+  }
+}
