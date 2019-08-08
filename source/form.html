@@ -214,20 +214,25 @@
           </div>
         </fieldset>
         <fieldset class="contest-form__fieldset contest-form__fieldset--contacts">
-          <legend class="contest-form__legend contest-form__legend--contacts"><span class="contest-form__hide-sm">Контактная информация</span></legend>
+          <legend class="contest-form__legend contest-form__legend--contacts"><span
+              class="contest-form__hide-sm">Контактная информация</span></legend>
           <div class="contest-form__wrap--contacts">
-            <p class="contest-form__contacts-item ">
+            <div class="contest-form__contacts-item ">
               <label class="contest-form__label contest-form__label--phone" for="contest-form__phone-number">Номер
                 телефона:</label>
-              <input class="contest-form__input contest-form__input--phone" id="contest-form__phone-number" type="tel"
-                name="Номер телефона:" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="contest-form__contacts-item">
+              <div class="contest-form__input-wrapper contest-form__input-wrapper--phone">
+                <input class="contest-form__input contest-form__input--phone" id="contest-form__phone-number" type="tel"
+                  name="Номер телефона:" placeholder="Номер, пожалуйста">
+              </div>
+            </div>
+            <div class="contest-form__contacts-item">
               <label class="contest-form__label contest-form__label--email" for="contest-form__email">Адрес
                 почты</label>
-              <input class="contest-form__input contest-form__input--email" id="contest-form__email" type="email"
-                required name="Адрес почты:" placeholder="Введите почту *">
-            </p>
+              <div class="contest-form__input-wrapper contest-form__input-wrapper--email">
+                <input class="contest-form__input contest-form__input--email" id="contest-form__email" type="email"
+                  required name="Адрес почты:" placeholder="Введите почту *">
+              </div>
+            </div>
           </div>
         </fieldset>
         <fieldset class="contest-form__fieldset contest-form__fieldset--apps">
@@ -267,9 +272,9 @@
         </fieldset>
 
         <div class="contest-form__submit-wrapper">
-        <button class="contest-form__submit-button" type="submit">Отправить форму</button>
-        <p class="contest-form__required-text"><span class="contest-form__attention">*</span> — обязательные
-          поля</p>
+          <button class="contest-form__submit-button" type="submit">Отправить форму</button>
+          <p class="contest-form__required-text"><span class="contest-form__attention">*</span> — обязательные
+            поля</p>
         </div>
 
       </form>
