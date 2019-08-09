@@ -311,8 +311,6 @@
     margin-left: 0;
   }
 
-  /*** Работае с иконками формы ***/
-
   .contest-form__wrap--contacts {
     display: flex;
     flex-direction: column;
@@ -360,7 +358,6 @@
     height: 62px;
     order: 20;
     padding: 12px 84px 12px 20px;
-
   }
 
   .contest-form__label--phone,
@@ -505,56 +502,17 @@
     }
   }
 
-  /*** Работае с иконками формы ***/
-
   .contest-form__wrap--contacts {
-    // display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
   }
 
-  // .contest-form__contacts-item {
-  //   margin: 0;
-  //   padding: 0;
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
   .contest-form__input-wrapper {
-    // position: relative;
     width: calc(100% - 25px);
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 2px;
-    //   right: 2px;
-    //   width: 62px;
-    //   height: 58px;
-    //   background-color: $border-color;
-    // }
-
-    // &--phone::after {
-    //   background-image: url("../img/icon-phone.svg");
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   background-size: 16px;
-    // }
-
-    // &--email::after {
-    //   background-image: url("../img/icon-mail.svg");
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   background-size: 16px;
-    // }
   }
 
   .contest-form__input--phone,
   .contest-form__input--email {
     width: 100%;
-    // height: 62px;
-    // order: 20;
-    // padding: 12px 64px 12px 20px;
   }
 
   .contest-form__label--phone,

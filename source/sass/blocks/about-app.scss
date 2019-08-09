@@ -10,11 +10,11 @@
   color: $text-dark;
   max-width: 250px;
   margin: 40px auto 0;
-}
 
-.about-app__slogan--last {
-  max-width: 250px;
-  margin: 30px auto 40px;
+  &--last {
+    max-width: 250px;
+    margin: 30px auto 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -23,11 +23,11 @@
     line-height: 48px;
     max-width: 600px;
     margin: 50px auto 0;
-  }
 
-  .about-app__slogan--last {
-    max-width: 550px;
-    margin: 0 auto 50px;
+    &--last {
+      max-width: 550px;
+      margin: 0 auto 50px;
+    }
   }
 }
 
@@ -37,10 +37,10 @@
     line-height: 58px;
     max-width: 750px;
     margin: 67px auto 0;
-  }
 
-  .about-app__slogan--last {
-    max-width: 650px;
-    margin: 5px auto 30px;
+    &--last {
+      max-width: 650px;
+      margin: 5px auto 30px;
+    }
   }
 }

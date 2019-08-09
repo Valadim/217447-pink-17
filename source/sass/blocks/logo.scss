@@ -1,4 +1,4 @@
-.logo__wrapper {
+.logo {
   position: relative;
   width: 280px;
   margin: 0 auto;
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo__wrapper {
+  .logo {
     width: 620px;
     margin: 0 auto;
     padding: 0;
@@ -42,7 +42,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .logo__wrapper {
+  .logo {
     width: 140px;
     margin: 0;
     padding-left: 10px;

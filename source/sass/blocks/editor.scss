@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.editor__controll {
+.editor__control {
   width: 48px;
   background-color: transparent;
   border: none;
@@ -126,7 +126,7 @@
   padding: 15px;
   border: 3px solid $accent-color;
   border-radius: 30px;
-  background-color: $bg-color;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -142,7 +142,6 @@
     color: #e3e3e4;
     border-color: #e3e3e4;
   }
-
 }
 
 @media (min-width: $tablet-width) {
@@ -153,7 +152,6 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
-
 
   .editor__image-wrapper {
     width: 300px;
@@ -179,7 +177,7 @@
     margin-bottom: 45px;
   }
 
-  .editor__controll {
+  .editor__control {
     width: 24px;
     margin-right: 30px;
     margin-left: 0;
@@ -246,7 +244,7 @@
     margin-bottom: 25px;
   }
 
-  .editor__controll {
+  .editor__control {
     width: 48px;
     margin-right: 45px;
   }

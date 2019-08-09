@@ -13,8 +13,8 @@
   <header class="page-header">
     <div class="page-header__nav-wrap">
       <div class="page-header__container">
-        <div class="logo__wrapper">
-          <a class="logo">
+        <div class="logo">
+          <a class="logo__link">
             <svg class="logo__mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859"
               enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -125,7 +125,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--last" href="https://up.htmlacademy.ru/adaptive/17">HTML
+              <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/17">HTML
                 Academy</a>
             </li>
           </ul>
@@ -137,7 +137,6 @@
       <div class="title__wrapper">
         <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
         <p class="title__slogan">Взгляните на жизнь иначе!</p>
-
         <div class="download">
           <a class="download__button" href="https://www.apple.com/itunes/">Скачать приложение</a>
           <ul class="download__list">
@@ -199,7 +198,6 @@
       <h2 class="visually-hidden">Информация о приложении</h2>
       <p class="about-app__slogan">Устали от серости мегаполиса?</p>
       <p class="about-app__slogan about-app__slogan--last">Нам есть, что вам предложить!</p>
-
       <div class="advantages">
         <div class="advantages__container">
           <ul class="advantages__list">
@@ -270,23 +268,23 @@
             </p>
           </blockquote>
         </div>
-        <div class="reviews__controlls">
-          <p class="reviews__arrows">
-            <button class="reviews__arrow-left" type="button">
+        <div class="slider__controlls">
+          <p class="slider__arrows">
+            <button class="slider__arrow-left" type="button">
               <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
-            <button class="reviews__arrow-right" type="button">
+            <button class="slider__arrow-right" type="button">
               <span class="visually-hidden">Следующий отзыв</span>
             </button>
           </p>
-          <p class="reviews__toggles">
-            <button class="reviews__toggle reviews__toggle--active" type="button">
+          <p class="slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button">
               <span class="visually-hidden">1</span>
             </button>
-            <button class="reviews__toggle" type="button">
+            <button class="slider__toggle" type="button">
               <span class="visually-hidden">2</span>
             </button>
-            <button class="reviews__toggle" type="button">
+            <button class="slider__toggle" type="button">
               <span class="visually-hidden">3</span>
             </button>
           </p>
@@ -296,8 +294,8 @@
 
     <section class="price">
       <h2 class="visually-hidden">Тарифные планы</h2>
-      <div class="price__wrapper">
-        <div class="price__slider slider">
+      <div class="price__wrapper slider">
+        <div class="price__slider slider__block">
           <table class="price__table">
             <tr>
               <th class="price__empty-cell"></th>
@@ -412,9 +410,7 @@
           </li>
           <li class="contacts__item">
             <b class="contacts__title">Приезжайте в гости:</b>
-            <p class="contacts__text">
-              <a class="contacts__link" href="#">ул. Большая<br>Конюшенная, 19/8</a>
-            </p>
+            <p class="contacts__text contacts__text--adress">ул. Большая<br>Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
@@ -422,8 +418,7 @@
         <picture>
           <source media="(min-width: 960px)" srcset="./img/bg-map-desktop@1x.jpg">
           <source media="(min-width: 660px)" srcset="./img/bg-map-tablet@1x.jpg">
-          <source media="(min-width: 280px)" srcset="./img/bg-map-mobile@1x.png">
-          <img class="contacts__map-image" src="./img/bg-map-desktop@1x.jpg" alt="ул. Большая Конюшенная, 19/8">
+          <img class="contacts__map-image" src="./img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8">
         </picture>
       </div>
     </section>
@@ -431,8 +426,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer-inner__wrapper container">
-
+    <div class="page-footer__wrapper container">
       <div class="logo logo--footer">
         <a class="logo">
           <svg class="logo__mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -509,7 +503,7 @@
         </a>
       </div>
 
-      <ul class="socials__list">
+      <ul class="socials">
         <li class="socials__item">
           <a class="socials__link" href="https://twitter.com/?lang=ru">
             <span class="visually-hidden">Твиттер</span>
@@ -548,7 +542,6 @@
           </a>
         </li>
       </ul>
-
       <p class="copyright">
         <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/17">
           <span class="copyright__text">Разработано</span>
@@ -562,23 +555,7 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/scripts.js"></script>
 
 </body>
 

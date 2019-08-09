@@ -1,25 +1,32 @@
-.page-footer-inner__logo-wrapper {
+.page-footer__logo-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   margin-top: 60px;
 }
 
-
 @media (min-width: $tablet-width) {
-  .page-footer-inner {
+  .page-footer {
     padding: 20px 0;
   }
 
-  .page-footer-inner__wrapper {
+  .page-footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    width: 620px;
+    margin: 0 auto;
   }
 
-  .page-footer-inner__logo-wrapper {
+  .page-footer__logo-wrapper {
     margin: 0;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 940px;
+   }
 }
