@@ -61,10 +61,6 @@
   }
 }
 
-.editor__range-controls {
-  position: relative;
-}
-
 .editor__range-controls .editor__range-scale {
   height: 2px;
   background-color: $main-color;
@@ -79,6 +75,7 @@
 .editor__range-toggle {
   position: absolute;
   top: -7px;
+  left: 80%;
   width: 12px;
   height: 12px;
   background-color: $bg-alt;
@@ -91,11 +88,8 @@
   }
 }
 
-.editor__range-toggle {
-  left: 80%;
-}
-
 .editor__range-controls {
+  position: relative;
   display: none;
 
   &--is-active {

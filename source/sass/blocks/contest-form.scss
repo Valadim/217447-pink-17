@@ -107,6 +107,8 @@
 
   &--comment {
     min-height: 200px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -124,13 +126,12 @@
   }
 }
 
-.contest-form__checkbox:focus+.contest-form__checkbox-indicator {
+.contest-form__checkbox:focus + .contest-form__checkbox-indicator {
   border-color: $accent-color;
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
-.contest-form__checkbox:checked+.contest-form__checkbox-indicator::before {
+.contest-form__checkbox:checked + .contest-form__checkbox-indicator::before {
   content: "";
   position: absolute;
   top: 0;
@@ -157,13 +158,12 @@
   }
 }
 
-.contest-form__radio:focus+.contest-form__radio-indicator {
+.contest-form__radio:focus + .contest-form__radio-indicator {
   border-color: $accent-color;
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
-.contest-form__radio:checked+.contest-form__radio-indicator::before {
+.contest-form__radio:checked + .contest-form__radio-indicator::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -172,11 +172,6 @@
   height: 14px;
   border-radius: 50%;
   background-color: $accent-color;
-}
-
-.contest-form__input--comment {
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .contest-form__submit-wrapper {
@@ -289,11 +284,12 @@
 
   .contest-form__contacts-item {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
 
   .contest-form__label {
-
     &--text {
       margin-right: 20px;
     }
@@ -312,13 +308,6 @@
   }
 
   .contest-form__wrap--contacts {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contest-form__contacts-item {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
   }
@@ -429,6 +418,7 @@
 
   .contest-form__wrap--contacts {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -502,10 +492,6 @@
     }
   }
 
-  .contest-form__wrap--contacts {
-    flex-direction: row;
-  }
-
   .contest-form__input-wrapper {
     width: calc(100% - 25px);
   }
@@ -519,7 +505,6 @@
   .contest-form__label--email {
     padding-left: 20px;
   }
-
 
   .contest-form__submit-wrapper {
     flex-basis: 100%;
