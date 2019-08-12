@@ -6,31 +6,68 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: flex;
-    background-color: $bg-alt;
+    background-color: $bg-color;
+    padding: 60px 0;
   }
 
-  .effect-wrap {
+  .effect__label-wrapper {
+    padding-top: 100px;
+    padding-right: 70px;
+    margin-bottom: 30px;
+  }
+
+  .effect__label {
+    position: relative;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1;
+    color: $accent-color;
+    margin-left: 65px;
+    margin-top: 75px;
+  }
+
+  .effect__label::before {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: -65px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-size: 202px, 238px 276px;
+    background-repeat: no-repeat;
+    background-position: center 55px, center;
+  }
+
+  .effect__wrap {
     display: flex;
+    width: 620px;
+    margin: 0 auto;
   }
 
-  .effect__image-wrapper {
-    width: 240px;
-    margin-right: 70px;
-  }
-
-  .effect__infp-wrapper {
+  .effect__info-wrapper {
     max-width: 310px;
+    margin-left: 65px;
   }
 
   .effect__title {
+    padding-top: 3px;
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 10px;
   }
 
   .effect__text {
     font-size: 14px;
     line-height: 24px;
     color: $main-color;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__link-wrapper {
+    margin-top: 0;
   }
 
   .effect__link {
@@ -43,22 +80,62 @@
 }
 
 @media (min-width: $desktop-width) {
-  .effect__image-wrapper {
-    width: 300px;
-    margin-right: 70px;
+  .effect {
+    display: flex;
+    background-color: $bg-alt;
+    padding: 10px 0;
   }
 
-  .effect__infp-wrapper {
+  .effect__wrap {
+    width: 940px;
+  }
+
+
+  .effect__label {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 220px;
+    color: $accent-color;
+    margin-left: 90px;
+  }
+
+  .effect__label::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    left: -80px;
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-size: 253px, 298px 345px;
+    background-repeat: no-repeat;
+    background-position: center 70px, center;
+  }
+
+  .effect__info-wrapper {
     max-width: 520px;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   .effect__title {
     line-height: 30px;
+    margin-bottom: 27px;
+  }
+
+  .effect__title br {
+    display: none;
   }
 
   .effect__text {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 27px;
   }
 
   .effect__link {
