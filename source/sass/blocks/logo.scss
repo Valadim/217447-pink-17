@@ -48,6 +48,11 @@
     width: 620px;
     margin: 0 auto;
     padding: 0;
+
+    &--footer {
+      width: auto;
+      margin-left: 0;
+    }
   }
 
   .logo__mobile {

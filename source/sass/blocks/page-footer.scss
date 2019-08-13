@@ -11,7 +11,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding: 20px 0;
+    margin: 62px 0 42px;
   }
 
   .page-footer__wrapper {
@@ -19,7 +19,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
     width: 620px;
     margin: 0 auto;
   }
