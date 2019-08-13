@@ -7,10 +7,11 @@
 
 .contest-form__intro-text {
   font-size: 14px;
+  line-height: 30px;
   color: $main-color;
   text-align: center;
   max-width: 550px;
-  margin: 50px auto;
+  margin: 46px auto 20px;
   padding: 0 20px;
 }
 
@@ -20,47 +21,81 @@
 
 .contest-form__legend {
   position: relative;
-  top: 60px;
+  top: 56px;
+  font-size: 14px;
+  line-height: 18px;
   color: $accent-color;
   text-transform: uppercase;
-  margin: 30px auto 60px;
+  padding: 0 20px;
+  margin: 20px auto 83px;
   text-align: center;
 
   &--contacts {
     margin: 0;
+  }
+
+  &--comment {
+    top: 6px;
+    margin-bottom: 8px;
   }
 }
 
 .contest-form__fieldset {
   margin-bottom: 30px;
   border: none;
-  padding: 0 20px;
+  padding: 0 18px;
 
   &--main {
     border: none;
     width: 100%;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     padding: 0 20px;
     box-sizing: border-box;
   }
 
   &--achivments,
   &--apps {
-    padding: 10px 20px;
+    padding: 0 18px;
+    margin-bottom: 32px;
     background-color: $bg-alt;
+  }
+
+  &--contacts {
+    margin-bottom: 8px;
+  }
+
+  &--comment {
+    margin-bottom: 25px;
   }
 }
 
 .contest-form__item {
   margin-bottom: 40px;
+
+  &--checkbox {
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 48px;
+    }
+  }
+
+  &--radio {
+    margin-top: 10px;
+    margin-bottom: 46px;
+  }
+}
+
+.contest-form__contacts-item {
+  margin-bottom: 14px;
 }
 
 .contest-form__label {
   position: relative;
   font-size: 18px;
   line-height: 30px;
-  padding-left: 70px;
+  padding-left: 68px;
 
   &:hover .contest-form__checkbox-indicator {
     border-color: $accent-color;
@@ -77,26 +112,29 @@
     font-size: 14px;
     text-transform: uppercase;
     color: $accent-color;
-    padding-left: 20px;
+    padding-left: 22px;
     padding-bottom: 5px;
   }
 
   &--phone,
   &--email {
+    display: inline-block;
     font-size: 14px;
     text-transform: uppercase;
     color: $accent-color;
-    padding-left: 20px;
+    padding-left: 22px;
+    margin-bottom: 5px;
   }
 }
 
 .contest-form__input {
   width: 100%;
+  height: 63px;
   font: inherit;
   font-size: 18px;
   line-height: 30px;
   padding: 10px 20px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   box-sizing: border-box;
   border: 2px solid $border-color;
 
@@ -108,6 +146,8 @@
   &--comment {
     min-height: 200px;
     width: 100%;
+    padding-top: 14px;
+    padding-left: 18px;
     box-sizing: border-box;
   }
 }
@@ -193,8 +233,8 @@
 
 .contest-form__submit-button {
   width: auto;
-  padding: 15px 42px;
-  margin: 0 20px 10px;
+  padding: 17px 42px;
+  margin: 0 20px 20px;
   border: none;
   font: inherit;
   font-size: 18px;
