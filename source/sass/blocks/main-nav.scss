@@ -142,7 +142,7 @@
     line-height: 18px;
     font-weight: 300;
     text-transform: none;
-    padding: 43px 41px;
+    padding: 46px 42px 47px 41px;
     border: none;
     background-color: transparent;
     box-sizing: border-box;
@@ -159,7 +159,7 @@
   }
 
   .main-nav__item:last-child .main-nav__link {
-    padding-right: 20px;
+    padding-right: 15px;
   }
 
   .main-nav__link--active {
@@ -169,9 +169,9 @@
     &::after {
       content: "";
       position: absolute;
-      right: 40px;
-      left: 40px;
-      bottom: 27px;
+      right: 42px;
+      left: 42px;
+      bottom: 35px;
       height: 2px;
       background-color: #ffffff;
     }
