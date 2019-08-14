@@ -29,6 +29,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    margin: 23px 0 38px;
+  }
+
   .page-footer__wrapper {
     width: 940px;
   }

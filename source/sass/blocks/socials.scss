@@ -50,3 +50,13 @@
     margin-right: 14%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .socials {
+    width: auto;
+    margin: auto;
+    margin-top: 29px;
+    margin-left: 245px;
+    margin-right: 243px;
+  }
+}
