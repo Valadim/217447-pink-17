@@ -23,12 +23,9 @@
 
   &--promo {
     margin-bottom: 0;
+    margin-left: calc((-100vw + 280px) / 2);
+    margin-right: calc((-100vw + 280px) / 2);
   }
-}
-
-.posts__item--promo {
-  margin-left: calc((-100vw + 280px) / 2);
-  margin-right: calc((-100vw + 280px) / 2);
 }
 
 .posts__promo-wrapper {
@@ -119,10 +116,14 @@
     line-height: 30px;
     color: $main-color;
     text-align: center;
-    margin: 84px auto 77px;
+    margin: 92px auto 77px;
     padding: 0 80px;
-    max-width: 500px;
+    max-width: 600px;
     box-sizing: border-box;
+
+    & br {
+      display: none;
+    }
   }
 
   .posts__list {
@@ -136,11 +137,16 @@
     width: 100%;
   }
 
-  .posts__item--promo {
-    width: 620px;
-    margin: 0 auto;
-  }
+  .posts__item {
+    margin-bottom: 19px;
 
+    &--promo {
+      width: 100vw;
+      margin-bottom: 0;
+      margin-left: calc((-100vw + 620px) / 2);
+      margin-right: calc((-100vw + 620px) / 2);
+    }
+  }
 
   .posts__promo-tag {
     padding: 12px 20px;
@@ -151,11 +157,11 @@
   .posts__image {
     width: 300px;
     height: 300px;
-  }
 
-  .posts__image--promo {
-    width: 620px;
-    height: 509px;
+    &--promo {
+      width: 660px;
+      height: 510px;
+    }
   }
 
   .posts__posts-wrapper {
@@ -186,16 +192,16 @@
     margin-bottom: 0;
     box-sizing: border-box;
     min-height: 155px;
-  }
 
-  .posts__post-info--prommo {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 620px;
-    margin-bottom: 42px;
-    padding: 23px 28px;
-    min-height: auto;
+    &--prommo {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 620px;
+      margin-bottom: 39px;
+      padding: 23px 28px;
+      min-height: auto;
+    }
   }
 
   .posts__description {
