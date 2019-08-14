@@ -19,7 +19,7 @@
 }
 
 .posts__item {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   &--promo {
     margin-bottom: 0;
@@ -159,8 +159,8 @@
     height: 300px;
 
     &--promo {
-      width: 660px;
-      height: 510px;
+      width: 100%;
+      height: 508px;
     }
   }
 
@@ -198,7 +198,7 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       width: 620px;
-      margin-bottom: 39px;
+      margin-bottom: 41px;
       padding: 23px 28px;
       min-height: auto;
     }
@@ -217,7 +217,7 @@
     text-align: center;
     margin: 92px auto 88px;
     padding: 0 80px;
-    max-width: 600px;
+    max-width: 720px;
   }
 
   .posts__list {
@@ -226,10 +226,15 @@
     width: 940px;
   }
 
-  .posts__item--promo {
-    width: 100vw;
-    margin-left: calc((-100vw + 940px) / 2);
-    margin-right: calc((-100vw + 940px) / 2);
+  .posts__item {
+    margin-bottom: 54px;
+
+    &--promo {
+      width: 100vw;
+      margin-left: calc((-100vw + 940px) / 2);
+      margin-right: calc((-100vw + 940px) / 2);
+      margin-bottom: 0;
+    }
   }
 
   .posts__promo-wrapper {

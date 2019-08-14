@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 22px;
   background-color: $bg-alt;
 }
 
@@ -270,6 +271,8 @@
   .editor__item--buttons {
     margin-top: 47px;
     margin-bottom: 0;
+    margin-right: 3px;
+    margin-left: 1px;
   }
 }
 
@@ -277,17 +280,30 @@
   .editor {
     flex-direction: row;
     width: 940px;
-    padding: 52px 80px 0;
-    margin: 0 auto;
+    padding: 0 80px 0;
+    margin: 0 auto 69px;
     box-sizing: border-box;
   }
 
   .editor__wrapper {
-    margin: 6px 20px 10px 87px;
+    margin: 53px 20px 11px 88px;
   }
 
   .editor__item {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+
+    &--crop {
+      margin-left: 0;
+    }
+
+    &--fill {
+      margin-bottom: 25px;
+      margin-left: 2px;
+    }
+
+    &--contrast {
+      margin-left: 0px;
+    }
   }
 
   .editor__control {
@@ -305,13 +321,44 @@
     }
   }
 
+  .editor__range-controls {
+    // display: inline-flex;
+
+    &--is-active {
+      top: -1px;
+      left: 1px;
+
+      & .editor__range-toggle {
+        left: 24.5%;
+      }
+    }
+
+    &--fill {
+      top: -3px;
+      left: -1px;
+
+      & .editor__range-toggle {
+        left: 85.6%;
+      }
+    }
+
+    &--contrast {
+      top: -1px;
+      left: 1px;
+
+      & .editor__range-toggle {
+        left: 55.5%;
+      }
+    }
+  }
+
   .editor__range-controls .editor__range-bar {
     width: 288px;
   }
 
   .editor__item--buttons {
     flex-direction: row;
-    margin-top: 138px;
+    margin-top: 139px;
   }
 
   .editor__button {
