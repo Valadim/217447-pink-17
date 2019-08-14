@@ -6,7 +6,7 @@
   font-weight: 300;
   margin-bottom: 50px;
   margin-top: 45px;
-  padding: 0 35px;
+  padding: 0 25px;
 }
 
 .posts__list {
@@ -19,7 +19,11 @@
 }
 
 .posts__item {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  &--promo {
+    margin-bottom: 0;
+  }
 }
 
 .posts__item--promo {

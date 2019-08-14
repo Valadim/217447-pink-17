@@ -6,15 +6,15 @@
 }
 
 .editor__image-wrapper {
-  width: 280px;
+  width: 284px;
   align-self: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .editor__image {
   width: 280px;
-  height: 384px;
+  height: 375px;
 }
 
 .editor__wrapper {
@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 280px;
   align-self: center;
   box-sizing: border-box;
@@ -31,6 +31,15 @@
 .editor__item {
   display: flex;
   align-items: center;
+  margin-left: 28px;
+
+  &--fill {
+    margin-left: 32px;
+  }
+
+  &--contrast {
+    margin-left: 38px;
+  }
 }
 
 .editor__control {
@@ -74,10 +83,10 @@
 
 .editor__range-toggle {
   position: absolute;
-  top: -7px;
-  left: 80%;
-  width: 12px;
-  height: 12px;
+  top: -6px;
+  left: 80.5%;
+  width: 10px;
+  height: 10px;
   background-color: $bg-alt;
   border: 2px solid $accent-color;
   border-radius: 50%;
@@ -95,9 +104,9 @@
   &--is-active {
     position: absolute;
     display: block;
-    top: 90px;
-    left: 0;
-    width: 100%;
+    top: 86px;
+    left: 18px;
+    width: 240px;
   }
 }
 
@@ -105,19 +114,19 @@
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  margin-top: 108px;
+  margin-left: -2px;
+  margin-bottom: 27px;
 }
 
 .editor__button {
-  flex-grow: 1;
   width: 100%;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
   color: $accent-color;
   margin-bottom: 12px;
-  padding: 15px;
+  padding: 15px 15px 16px;
   border: 3px solid $accent-color;
   border-radius: 30px;
   background-color: transparent;
