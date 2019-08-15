@@ -259,24 +259,43 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding: 150px 0 100px;
+    padding: 151px 0 68px;
   }
 
   .price__wrapper {
     width: 940px;
   }
 
+  .price__tag::before {
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 80px;
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  .price__tag-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+
   .price__feature-cell {
-    padding: 15px 20px;
+    padding: 13px 20px 14px;
     font-size: 18px;
     line-height: 30px;
     text-transform: none;
+
+    &--comment {
+      padding-top: 19px;
+      padding-bottom: 14px;
+    }
   }
 
   .price__title {
     font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 
   .price__value {
