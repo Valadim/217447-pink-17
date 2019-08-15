@@ -1,5 +1,9 @@
 .page-footer {
   margin: 20px 0 0;
+
+  &--main-page {
+    display: none;
+  }
 }
 
 .page-footer__logo-wrapper {
@@ -11,7 +15,11 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    margin: 62px 0 38px;
+    margin: 32px 0 38px;
+
+    &--main-page {
+      display: block;
+    }
   }
 
   .page-footer__wrapper {

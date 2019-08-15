@@ -9,7 +9,7 @@
 .contacts__heading {
   margin: 0;
   margin-top: 45px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding: 0;
   font-size: 24px;
   font-weight: 300;
@@ -27,14 +27,21 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.contacts__item:nth-child(2) {
-  order: 10;
-}
 
-.contacts__item:nth-child(3) {
-  order: 20;
+.contacts__item {
+  margin-bottom: 18px;
+
+  &:nth-child(2) {
+    order: 10;
+    margin-bottom: 24px;
+  }
+
+  &:nth-child(3) {
+    order: 20;
+  }
 }
 
 .contacts__title {
@@ -43,6 +50,12 @@
   font-weight: 700;
   line-height: 24px;
   color: $main-color;
+  margin-bottom: 3px;
+}
+
+.contacts__text {
+  padding: 0;
+  margin: 0;
 }
 
 .contacts__text--adress {
@@ -58,6 +71,7 @@
   line-height: 28px;
   color: $accent-color;
   text-decoration: none;
+  margin-top: 0;
 
   &:hover,
   &:focus {
@@ -68,16 +82,36 @@
 
 .contacts__map-wrapper {
   position: relative;
+  height: 200px;
 
-  &::after {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 15%;
+    height: 17%;
     margin-top: 0;
     background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    width: 37px;
+    height: 37px;
+    transform: translateX(-50%);
+    background-image: url("../img/icon-map-marker.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center top;
@@ -85,26 +119,79 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__wrapper {
-    width: 640px;
-  }
-
-  .contacts__list {
-    justify-content: space-between;
-  }
-
-  .contacts__item {
-    flex-grow: 1;
-    margin-bottom: 20px;
-  }
-
   .contacts__heading {
-    margin-top: 45px;
-    margin-bottom: 35px;
     font-size: 40px;
     line-height: 48px;
     max-width: 400px;
+    margin-top: 45px;
+    margin-bottom: 45px;
   }
+
+  .contacts__wrapper {
+    width: 620px;
+    margin-bottom: 0;
+  }
+
+  .contacts__list {
+    justify-content: flex-start;
+    margin-bottom: 27px;
+  }
+
+  .contacts__item {
+    margin-bottom: 45px;
+
+    &--call {
+      margin-left: 46px;
+    }
+
+    &--send {
+      margin-left: 99px;
+      margin-right: 0px;
+    }
+
+    &--adress {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__item--adress .contacts__title {
+    margin-bottom: 10px;
+  }
+
+  .contacts__map-wrapper {
+    height: 375px;
+
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: left -315px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 22%;
+      margin-top: 0;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 193px;
+      left: 50%;
+      width: 37px;
+      height: 37px;
+      transform: translateX(-50%);
+
+    }
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -127,4 +214,36 @@
   .contacts__item:nth-child(3) {
     order: 10;
   }
+
+  .contacts__map-wrapper {
+    height: 200px;
+
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 17%;
+      margin-top: 0;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 95px;
+      left: 50%;
+      width: 37px;
+      height: 37px;
+      transform: translateX(-50%);
+
+    }
+  }
+
 }

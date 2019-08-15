@@ -232,7 +232,7 @@
     &--promo {
       width: 100vw;
       margin-left: calc((-100vw + 940px) / 2);
-      margin-right: calc((-100vw + 940px) / 2);
+      margin-right: calc((-100vw + 920px) / 2);
       margin-bottom: 0;
     }
   }
@@ -250,11 +250,11 @@
   .posts__image {
     width: 300px;
     height: 400px;
-  }
 
-  .posts__image--promo {
-    width: 100%;
-    height: auto;
+    &--promo {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .posts__post-info--prommo {
