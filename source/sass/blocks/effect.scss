@@ -65,6 +65,10 @@
     color: $main-color;
     margin-top: 0;
     margin-bottom: 10px;
+
+    & br {
+      display: none;
+    }
   }
 
   .effect__link-wrapper {
@@ -84,7 +88,7 @@
   .effect {
     display: flex;
     background-color: $bg-alt;
-    padding: 10px 0;
+    padding: 6px 0;
   }
 
   .effect__wrap {
@@ -100,13 +104,13 @@
     font-weight: 700;
     line-height: 220px;
     color: $accent-color;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 
   .effect__label::before {
     content: "";
     position: absolute;
-    top: -110px;
+    top: -108px;
     left: -80px;
     width: 298px;
     height: 345px;
@@ -118,15 +122,15 @@
   }
 
   .effect__info-wrapper {
-    max-width: 520px;
+    max-width: 540px;
     margin-left: 80px;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 82px;
+    margin-bottom: 96px;
   }
 
   .effect__title {
     line-height: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
   }
 
   .effect__title br {
@@ -136,7 +140,11 @@
   .effect__text {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
+
+    & br {
+      display: block;
+    }
   }
 
   .effect__link {
