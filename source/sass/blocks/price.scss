@@ -9,6 +9,7 @@
 
 .price__slider {
   overflow-x: hidden;
+  margin-bottom: 27px;
 }
 
 .price__table {
@@ -155,10 +156,6 @@
   }
 }
 
-.price__slider {
-  margin-bottom: 27px;
-}
-
 @media (min-width: $tablet-width) {
   .price {
     padding: 87px 0 43px;
@@ -176,7 +173,7 @@
 
   .price__table th {
     width: 158px;
- }
+  }
 
   .price__tag::before {
     top: 0;
