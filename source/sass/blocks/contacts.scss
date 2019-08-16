@@ -98,7 +98,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 17%;
+    height: 20%;
     margin-top: 0;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-size: 100%;
@@ -258,15 +258,14 @@
   .contacts__text {
     padding: 0;
     margin: 0;
-  }
 
-  .contacts__text--adress {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 28px;
-    color: $accent-color;
+    &--adress {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 28px;
+      color: $accent-color;
+    }
   }
-
 
   .contacts__map-wrapper {
     height: 518px;
