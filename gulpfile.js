@@ -106,4 +106,5 @@ gulp.task("server", function () {
   server.reload();
   done();
  });
+
  gulp.task("start", gulp.series("build", "server"));
