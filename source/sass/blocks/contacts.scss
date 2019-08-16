@@ -258,15 +258,14 @@
   .contacts__text {
     padding: 0;
     margin: 0;
-  }
 
-  .contacts__text--adress {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 28px;
-    color: $accent-color;
+    &--adress {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 28px;
+      color: $accent-color;
+    }
   }
-
 
   .contacts__map-wrapper {
     height: 518px;
