@@ -49,6 +49,11 @@
   z-index: 9;
 }
 
+.posts__image-link {
+  width: 100%;
+  height: auto;
+}
+
 .posts__image {
   width: 280px;
   height: 180px;
@@ -244,7 +249,7 @@
 
   .posts__promo-tag {
     top: 54px;
-    right: 10.8%;
+    right: calc(11% - 2px);
   }
 
   .posts__image {

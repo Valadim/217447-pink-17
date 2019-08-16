@@ -7,6 +7,11 @@
   background-position: left 107px;
   background-repeat: no-repeat;
   background-size: 259px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
 }
 
 .title__slogan {
@@ -45,6 +50,11 @@
     background-position: -40px bottom;
     background-repeat: no-repeat;
     background-size: 700px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
   }
 
   .title__slogan {
@@ -83,6 +93,11 @@
     background-position: 26px bottom;
     background-repeat: no-repeat;
     background-size: 1050px 644px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 
   .title__slogan {
