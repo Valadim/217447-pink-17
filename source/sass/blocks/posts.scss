@@ -6,7 +6,7 @@
   font-weight: 300;
   margin-bottom: 50px;
   margin-top: 45px;
-  padding: 0 35px;
+  padding: 0 25px;
 }
 
 .posts__list {
@@ -19,12 +19,13 @@
 }
 
 .posts__item {
-  margin-bottom: 20px;
-}
+  margin-bottom: 21px;
 
-.posts__item--promo {
-  margin-left: calc((-100vw + 280px) / 2);
-  margin-right: calc((-100vw + 280px) / 2);
+  &--promo {
+    margin-bottom: 0;
+    margin-left: calc((-100vw + 280px) / 2);
+    margin-right: calc((-100vw + 280px) / 2);
+  }
 }
 
 .posts__promo-wrapper {
@@ -46,6 +47,11 @@
   padding: 10px 20px;
   background-color: $accent-color;
   z-index: 9;
+}
+
+.posts__image-link {
+  width: 100%;
+  height: auto;
 }
 
 .posts__image {
@@ -115,10 +121,14 @@
     line-height: 30px;
     color: $main-color;
     text-align: center;
-    margin: 84px auto 77px;
+    margin: 92px auto 77px;
     padding: 0 80px;
-    max-width: 500px;
+    max-width: 600px;
     box-sizing: border-box;
+
+    & br {
+      display: none;
+    }
   }
 
   .posts__list {
@@ -132,11 +142,16 @@
     width: 100%;
   }
 
-  .posts__item--promo {
-    width: 620px;
-    margin: 0 auto;
-  }
+  .posts__item {
+    margin-bottom: 19px;
 
+    &--promo {
+      width: 100vw;
+      margin-bottom: 0;
+      margin-left: calc((-100vw + 620px) / 2);
+      margin-right: calc((-100vw + 620px) / 2);
+    }
+  }
 
   .posts__promo-tag {
     padding: 12px 20px;
@@ -147,11 +162,11 @@
   .posts__image {
     width: 300px;
     height: 300px;
-  }
 
-  .posts__image--promo {
-    width: 620px;
-    height: 509px;
+    &--promo {
+      width: 100%;
+      height: 508px;
+    }
   }
 
   .posts__posts-wrapper {
@@ -182,16 +197,16 @@
     margin-bottom: 0;
     box-sizing: border-box;
     min-height: 155px;
-  }
 
-  .posts__post-info--prommo {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 620px;
-    margin-bottom: 42px;
-    padding: 23px 28px;
-    min-height: auto;
+    &--prommo {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 620px;
+      margin-bottom: 41px;
+      padding: 23px 28px;
+      min-height: auto;
+    }
   }
 
   .posts__description {
@@ -207,7 +222,7 @@
     text-align: center;
     margin: 92px auto 88px;
     padding: 0 80px;
-    max-width: 600px;
+    max-width: 720px;
   }
 
   .posts__list {
@@ -216,10 +231,15 @@
     width: 940px;
   }
 
-  .posts__item--promo {
-    width: 100vw;
-    margin-left: calc((-100vw + 940px) / 2);
-    margin-right: calc((-100vw + 940px) / 2);
+  .posts__item {
+    margin-bottom: 54px;
+
+    &--promo {
+      width: 100vw;
+      margin-left: calc((-100vw + 940px) / 2);
+      margin-right: calc((-100vw + 920px) / 2);
+      margin-bottom: 0;
+    }
   }
 
   .posts__promo-wrapper {
@@ -229,17 +249,17 @@
 
   .posts__promo-tag {
     top: 54px;
-    right: 10.8%;
+    right: calc(11% - 2px);
   }
 
   .posts__image {
     width: 300px;
     height: 400px;
-  }
 
-  .posts__image--promo {
-    width: 100%;
-    height: auto;
+    &--promo {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .posts__post-info--prommo {

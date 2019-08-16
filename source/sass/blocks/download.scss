@@ -19,6 +19,8 @@
   padding: 15px 38px;
   margin-top: 5px;
   margin-bottom: 37px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .download__list {
@@ -30,25 +32,31 @@
 
   @include list-normilize;
 
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .download__item {
   margin-right: 35px;
-}
 
-.download__item:last-child {
-  margin-right: 0;
+  &:first-child {
+    margin-top: -5px;
+  }
+
+  &:last-child {
+    margin-top: 5px;
+    margin-right: 0;
+  }
 }
 
 .download__legend {
-  font: 14px;
+  max-width: 300px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: $text-light;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
   padding: 0 20px;
 }
 
@@ -66,28 +74,35 @@
   .download__button {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 47px;
+    margin-bottom: 50px;
     padding: 15px 45px;
   }
 
   .download__list {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     width: 300px;
   }
 
   .download__item {
     margin-right: 35px;
-  }
 
-  .download__item:last-child {
-    margin-right: 0;
+    &:first-child {
+      margin-top: -3px;
+      margin-left: -4px;
+      margin-right: 36px;
+    }
+
+    &:last-child {
+      margin-top: 5px;
+      margin-right: 0;
+    }
   }
 
   .download__legend {
     font-size: 18px;
     line-height: 26px;
     padding: 0;
-    margin-bottom: 110px;
+    margin-bottom: 108px;
   }
 }
 
@@ -114,6 +129,7 @@
   }
 
   .download__legend {
-    margin-bottom: 54px;
+    margin-bottom: 58px;
+    margin-left: 10px;
   }
 }

@@ -3,7 +3,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .copyright__link {
@@ -16,17 +16,39 @@
   font-size: 14px;
   line-height: 18px;
   color: $main-color;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 9px;
 }
 
 .copyright__image {
   fill: $accent-color;
-  width: 35px;
+  width: 40px;
   height: 44px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
+    margin-top: 7px;
+  }
+
+  .copyright__image {
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-top: 32px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+    color: $main-color;
+    margin-left: 5px;
+    margin-right: 9px;
   }
 }

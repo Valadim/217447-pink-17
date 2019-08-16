@@ -6,7 +6,7 @@
   @include list-normilize;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .socials__item {
@@ -18,7 +18,7 @@
   height: 45px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 .socials__item:last-child {
@@ -28,10 +28,35 @@
 .socials__icon {
   fill: $accent-color;
   vertical-align: middle;
+
+  &--twitter {
+    position: relative;
+    left: 1px;
+  }
+
+  &--youtube {
+    position: relative;
+    top: -1px;
+    left: 1px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .socials {
-    margin: 0;
+    width: auto;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 14%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials {
+    width: auto;
+    margin: auto;
+    margin-top: 29px;
+    margin-left: 245px;
+    margin-right: 218px;
   }
 }
