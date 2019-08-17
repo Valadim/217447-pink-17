@@ -21,6 +21,19 @@
   margin-bottom: 37px;
   margin-right: 0;
   margin-left: 0;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $bg-color;
+    background-color: $bg-color;
+  }
+
+  &:active {
+    color: #f2cdd4;
+    border-color: $bg-color;
+    background-color: $bg-color;
+  }
 }
 
 .download__list {

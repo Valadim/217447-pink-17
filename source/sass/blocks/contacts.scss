@@ -78,6 +78,11 @@
     color: $text-black;
     text-decoration: underline;
   }
+
+  &:active {
+    color: #cdcfd1;
+    text-decoration: none;
+  }
 }
 
 .contacts__map-wrapper {

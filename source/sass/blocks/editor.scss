@@ -146,6 +146,19 @@
     color: #e3e3e4;
     border-color: #e3e3e4;
   }
+
+  &--disabled:hover,
+  &--disabled:focus {
+    color: #c2c4c7;
+    border-color: #b5b9be;
+    background-color: transparent;
+  }
+
+  &--disabled:active {
+    color: #cdcfd3;
+    border-color: #b5b9be;
+    background-color: #b5b9be;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -215,7 +228,7 @@
 
     &:hover,
     &:focus {
-      fill: $main-color;
+      fill: #8d949b;
     }
   }
 
