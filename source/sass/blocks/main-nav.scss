@@ -34,6 +34,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+  display: none;
   width: 24px;
   height: 23px;
 }
@@ -85,10 +86,10 @@
     color: $accent-color;
     opacity: 0.3;
   }
-}
 
-.main-nav__link--active {
-  color: $accent-color;
+  &--active {
+    color: $accent-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -113,6 +114,10 @@
     background-color: $main-color;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
+
+    &--active {
+      color: $accent-color;
+    }
   }
 }
 
@@ -136,6 +141,10 @@
 
   .main-nav__item {
     width: auto;
+
+    &:last-child .main-nav__link {
+      padding-right: 15px;
+    }
   }
 
   .main-nav__link {
@@ -157,34 +166,30 @@
       color: $accent-color;
       opacity: 0.3;
     }
-  }
 
-  .main-nav__item:last-child .main-nav__link {
-    padding-right: 15px;
-  }
+    &--active {
+      position: relative;
+      color: #ffffff;
 
-  .main-nav__link--active {
-    position: relative;
-    color: #ffffff;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 40px;
+        left: 42px;
+        bottom: 35px;
+        height: 2px;
+        background-color: #ffffff;
+      }
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 40px;
-      left: 42px;
-      bottom: 35px;
-      height: 2px;
-      background-color: #ffffff;
-    }
+      &:hover::after,
+      &:focus::after {
+        background-color: $accent-color;
+      }
 
-    &:hover::after,
-    &:focus::after {
-      background-color: $accent-color;
-    }
-
-    &:active::after {
-      background-color: $accent-color;
-      opacity: 0.3;
+      &:active::after {
+        background-color: $accent-color;
+        opacity: 0.3;
+      }
     }
   }
 
