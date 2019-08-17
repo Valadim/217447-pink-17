@@ -133,10 +133,6 @@
     margin-left: -7px;
     width: 292px;
 
-    &--mood {
-      margin-left: 0;
-    }
-
     &--change {
       margin-left: 28px;
     }
@@ -168,13 +164,16 @@
     display: block;
     width: 292px;
     height: 302px;
+
+    &--mood {
+      margin-left: 0;
+    }
   }
 
   .advantages__title {
     font-size: 30px;
     line-height: 30px;
     margin-top: 57px;
-    // margin-left: -12px;
   }
 
   .advantages__title br {

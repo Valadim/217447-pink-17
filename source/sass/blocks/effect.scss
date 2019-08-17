@@ -81,6 +81,19 @@
     color: $accent-color;
     text-decoration: none;
     border-bottom: 1px solid $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $text-black;
+      border-bottom: 1px solid $text-black;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: #cdcfd1;
+      border-bottom: none;
+      text-decoration: none;
+    }
   }
 }
 

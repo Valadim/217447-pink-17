@@ -139,8 +139,12 @@
   box-sizing: border-box;
   border: 2px solid $border-color;
 
-  &:hover,
-  &:focus {
+  &:hover {
+    border-color: $main-color;
+  }
+
+  &:focus,
+  &:active {
     border-color: $accent-color;
   }
 
@@ -163,8 +167,18 @@
   background-color: $bg-color;
 
   &:hover {
+    border-color: $main-color;
+  }
+
+  &:focus,
+  &:active {
     border-color: $accent-color;
   }
+}
+
+.contest-form__checkbox:hover + .contest-form__checkbox-indicator {
+  border-color: $main-color;
+  outline: thin dotted;
 }
 
 .contest-form__checkbox:focus + .contest-form__checkbox-indicator {
@@ -195,6 +209,11 @@
   background-color: $bg-color;
 
   &:hover {
+    border-color: $main-color;
+  }
+
+  &:focus,
+  &:active {
     border-color: $accent-color;
   }
 }
