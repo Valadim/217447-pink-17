@@ -92,6 +92,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
