@@ -25,12 +25,14 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    border-color: $accent-color;
+    border-color: $bg-color;
+    background-color: $bg-color;
   }
 
   &:active {
-    color: #e07e94;
-    border-color: #e07e94;
+    color: #f2cdd4;
+    border-color: $bg-color;
+    background-color: $bg-color;
   }
 }
 

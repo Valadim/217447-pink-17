@@ -19,6 +19,15 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
   margin-right: 12px;
+
+  &:hover,
+  &:focus {
+    border-color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .socials__item:last-child {
@@ -38,6 +47,10 @@
     position: relative;
     top: -1px;
     left: 1px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

@@ -24,6 +24,15 @@
   fill: $accent-color;
   width: 38px;
   height: 34px;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
