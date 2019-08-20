@@ -27,9 +27,12 @@
   display: block;
   fill: $bg-color;
 
-  &:hover,
-  &:active {
+  &:hover {
     fill: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
