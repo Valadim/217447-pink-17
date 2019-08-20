@@ -23,7 +23,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    fill: #6b7681;
   }
 
   &--footer {
@@ -33,6 +33,11 @@
 
     &:hover {
       fill: #d22856;
+    }
+
+    &:active {
+      fill: #283645;
+      opacity: 0.3;
     }
   }
 }
@@ -75,7 +80,7 @@
     }
 
     &:active {
-      opacity: 0.3;
+      fill: #6b7681;
     }
   }
 
@@ -117,11 +122,16 @@
     }
 
     &:active {
-      opacity: 0.3;
+      fill: #6b7681;
     }
 
     &--footer {
       fill: #283645;
+
+      &:active {
+        fill: #283645;
+        opacity: 0.3;
+      }
     }
   }
 }

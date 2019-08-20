@@ -271,9 +271,10 @@
 
   &:active {
     color: #7abc98;
+    background-color: #1c9b5e;
   }
 
-  &--disabled {
+  &:disabled {
     background-color: #e5e5e5;
     color: #ffffff;
   }

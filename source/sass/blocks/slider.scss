@@ -72,16 +72,17 @@
     right: 0;
     width: 6px;
     height: 6px;
-    background-color: #bec2c7;
+    background-color: $main-color;
     border-radius: 50%;
+    opacity: 0.3;
   }
 
   &:hover::before {
-    background-color: #7e868f;
+    opacity: 0.6;
   }
 
   &:active::before {
-    background-color: #e9ebec;
+    opacity: 0.1;
   }
 }
 
