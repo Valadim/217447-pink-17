@@ -1,0 +1,168 @@
+.effect {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    background-color: $bg-color;
+    padding: 62px 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__label-wrapper {
+    padding-top: 100px;
+    padding-right: 70px;
+    margin-bottom: 30px;
+  }
+
+  .effect__label {
+    position: relative;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1;
+    color: $accent-color;
+    margin-left: 65px;
+    margin-top: 75px;
+  }
+
+  .effect__label::before {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: -65px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-size: 202px, 238px 276px;
+    background-repeat: no-repeat;
+    background-position: center 55px, center;
+  }
+
+  .effect__wrap {
+    display: flex;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .effect__info-wrapper {
+    max-width: 300px;
+    margin-left: 65px;
+  }
+
+  .effect__title {
+    padding-top: 3px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .effect__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $main-color;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .effect__link-wrapper {
+    margin-top: 0;
+  }
+
+  .effect__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: $accent-color;
+    text-decoration: none;
+    border-bottom: 1px solid $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $text-black;
+      border-bottom: 1px solid $text-black;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: #cdcfd1;
+      border-bottom: none;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    display: flex;
+    background-color: $bg-alt;
+    padding: 6px 0;
+  }
+
+  .effect__wrap {
+    width: 940px;
+  }
+
+
+  .effect__label {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 220px;
+    color: $accent-color;
+    margin-left: 80px;
+  }
+
+  .effect__label::before {
+    content: "";
+    position: absolute;
+    top: -108px;
+    left: -80px;
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-size: 253px, 298px 345px;
+    background-repeat: no-repeat;
+    background-position: center 70px, center;
+  }
+
+  .effect__info-wrapper {
+    max-width: 540px;
+    margin-left: 80px;
+    margin-top: 82px;
+    margin-bottom: 96px;
+  }
+
+  .effect__title {
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .effect__title br {
+    display: none;
+  }
+
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 29px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+    color: $accent-color;
+  }
+}

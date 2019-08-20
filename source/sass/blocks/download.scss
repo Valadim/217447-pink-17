@@ -1,0 +1,148 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: $main-color;
+  width: 100%;
+  margin-top: 303px;
+  padding: 25px 0 0;
+  box-sizing: border-box;
+}
+
+.download__button {
+  @include button;
+
+  display: block;
+  border: 3px solid $text-light;
+  color: $text-light;
+  padding: 15px 38px;
+  margin-top: 5px;
+  margin-bottom: 37px;
+  margin-right: 0;
+  margin-left: 0;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $bg-color;
+    background-color: $bg-color;
+  }
+
+  &:active {
+    color: #f2cdd4;
+    border-color: $bg-color;
+    background-color: $bg-color;
+  }
+}
+
+.download__list {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  @include list-normilize;
+
+  margin-bottom: 14px;
+}
+
+.download__item {
+  margin-right: 35px;
+
+  &:first-child {
+    margin-top: -5px;
+  }
+
+  &:last-child {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+}
+
+.download__legend {
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $text-light;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 31px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 310px;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .download__button {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    padding: 15px 45px;
+  }
+
+  .download__list {
+    margin-bottom: 26px;
+    width: 300px;
+  }
+
+  .download__item {
+    margin-right: 35px;
+
+    &:first-child {
+      margin-top: -3px;
+      margin-left: -4px;
+      margin-right: 36px;
+    }
+
+    &:last-child {
+      margin-top: 5px;
+      margin-right: 0;
+    }
+  }
+
+  .download__legend {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0;
+    margin-bottom: 108px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    background-color: transparent;
+    width: 320px;
+    text-align: center;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .download__button {
+    margin-bottom: 70px;
+    margin-left: 10px;
+    padding: 15px 29px;
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  .download__list {
+    margin-bottom: 45px;
+    margin-left: 10px;
+  }
+
+  .download__legend {
+    margin-bottom: 58px;
+    margin-left: 10px;
+  }
+}

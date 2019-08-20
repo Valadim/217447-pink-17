@@ -1,0 +1,80 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 280px;
+
+  @include list-normilize;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 27px;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    border-color: $main-color;
+  }
+
+  &:active {
+    border-color: rgba(#e9ebec, 0.1);
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__icon {
+  fill: $accent-color;
+  vertical-align: middle;
+
+  &--twitter {
+    position: relative;
+    left: 1px;
+  }
+
+  &--youtube {
+    position: relative;
+    top: -1px;
+    left: 1px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    width: 190px;
+    margin: auto;
+    margin-top: 13px;
+    margin-left: 68px;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials {
+    margin: auto;
+    margin-top: 29px;
+    margin-left: 239px;
+    margin-right: 204px;
+  }
+}
