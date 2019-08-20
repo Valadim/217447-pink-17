@@ -1,5 +1,5 @@
 .slider__arrows {
-  display: block;
+  display: none;
 }
 
 .slider__arrow-left {
@@ -101,6 +101,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider__arrows {
+    display: block;
+  }
+
   .slider__toggles {
     display: none;
   }
