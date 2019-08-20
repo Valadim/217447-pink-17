@@ -1,12 +1,13 @@
 .socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 280px;
 
   @include list-normilize;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 37px;
+  margin-bottom: 27px;
 }
 
 .socials__item {
@@ -19,6 +20,7 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
   margin-right: 12px;
+  margin-bottom: 10px;
 
   &:hover,
   &:focus {
@@ -26,7 +28,11 @@
   }
 
   &:active {
-    opacity: 0.1;
+    border-color: rgba(#e9ebec, 0.1);
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
   }
 }
 
@@ -56,20 +62,19 @@
 
 @media (min-width: $tablet-width) {
   .socials {
-    width: auto;
+    width: 190px;
     margin: auto;
-    margin-top: 5px;
-    margin-left: 0;
-    margin-right: 14%;
+    margin-top: 13px;
+    margin-left: 68px;
+    margin-right: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .socials {
-    width: auto;
     margin: auto;
     margin-top: 29px;
-    margin-left: 245px;
-    margin-right: 218px;
+    margin-left: 239px;
+    margin-right: 204px;
   }
 }
